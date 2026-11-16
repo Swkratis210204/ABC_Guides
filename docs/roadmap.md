@@ -1,6 +1,6 @@
 # Roadmap
 
-Goal: a university department information system that **non-technical people can maintain** by editing JSON files only. See [step-1.md](step-1.md) for the full goal and what is finished.
+Goal: a university department information system that **non-technical people can maintain** by editing JSON files only. See [step-1.md](work/step-1.md) for the full goal and what is finished.
 
 Status: ✅ done, 🔄 in progress, ⬜ not started.
 
@@ -14,13 +14,13 @@ Status: ✅ done, 🔄 in progress, ⬜ not started.
 | 6 | Build the website (MkDocs) | ⬜ |
 | 7 | Publish the website (GitHub Pages) | ⬜ |
 | 8 | Add search | ⬜ |
-| 9 | README and documentation | ⬜ |
+| 9 | Full documentation (README first draft is written) | 🔄 |
 | 10 | Try it with a real non-technical person | ⬜ |
 
 ---
 
 ### 1. First schema, checker and tests ✅
-Schema for the three tiers, sample data, a checker with plain-language messages, automatic tests. Details in [step-1.md](step-1.md).
+Schema for the three tiers, sample data, a checker with plain-language messages, automatic tests. Details in [step-1.md](work/step-1.md).
 
 ### 2. Finish the schema and freeze version 1
 Fix the known gaps, then stop changing the shape.
@@ -68,8 +68,8 @@ Done when: a change in the JSON appears on the live site within minutes with no 
 ### 8. Add search
 Start with MkDocs' built-in search. Apply for Algolia DocSearch once the site is public.
 
-### 9. README and documentation
-- **README:** what the project is, how it works, where to start.
+### 9. Full documentation 🔄
+- **README:** first draft written (what the project is, how it works, how to check content). Keep it up to date as steps are finished.
 - **Documentation:** how the folders and files are organised, what each field means, how to add a university or department.
 - **For maintainers:** how the checks and the build work, how to change the schema safely.
 
