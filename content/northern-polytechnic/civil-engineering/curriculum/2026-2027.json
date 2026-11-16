@@ -1,0 +1,9 @@
+{
+  "academic_year": "2026-2027",
+  "levels": [
+    { "id": "core", "short": "Π", "name": { "el": "Υποχρεωτικά", "en": "Core" } }
+  ],
+  "courses": [
+    { "code": "CE101", "name": { "el": "Στατική", "en": "Statics" }, "level": "core", "ects": 5, "semesters": [1] }
+  ]
+}

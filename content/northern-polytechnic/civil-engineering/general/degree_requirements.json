@@ -1,0 +1,7 @@
+{
+  "total_ects": 300,
+  "min_semesters": 10,
+  "rules": [
+    { "id": "thesis", "title": { "el": "Διπλωματική εργασία", "en": "Diploma thesis" }, "description": { "el": "Ολοκλήρωση διπλωματικής εργασίας.", "en": "Complete a diploma thesis." } }
+  ]
+}

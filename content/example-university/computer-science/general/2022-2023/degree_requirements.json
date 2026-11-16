@@ -1,0 +1,7 @@
+{
+  "total_ects": 210,
+  "min_semesters": 7,
+  "rules": [
+    { "id": "mandatory", "title": { "en": "Mandatory courses" }, "description": { "en": "Pass all mandatory courses (older rules)." } }
+  ]
+}

@@ -24,12 +24,13 @@ FILE_RULES = [
     (r"university/grading_scale\.json", "grading_scale"),
     (r"university/free_electives\.json", "free_electives"),
     (r"university/calendar/(\d{4}-\d{4})\.json", "calendar"),
-    (r"[^/]+/general/department\.json", "department"),
-    (r"[^/]+/general/administration\.json", "administration"),
-    (r"[^/]+/general/sectors\.json", "sectors"),
+    # These general files may have an older version in general/YYYY-YYYY/ (the plain one is the current version).
+    (r"[^/]+/general/(?:\d{4}-\d{4}/)?department\.json", "department"),
+    (r"[^/]+/general/(?:\d{4}-\d{4}/)?administration\.json", "administration"),
+    (r"[^/]+/general/(?:\d{4}-\d{4}/)?sectors\.json", "sectors"),
     (r"[^/]+/general/faculty\.json", "faculty"),
-    (r"[^/]+/general/postgraduate_programs\.json", "postgraduate_programs"),
-    (r"[^/]+/general/degree_requirements\.json", "degree_requirements"),
+    (r"[^/]+/general/(?:\d{4}-\d{4}/)?postgraduate_programs\.json", "postgraduate_programs"),
+    (r"[^/]+/general/(?:\d{4}-\d{4}/)?degree_requirements\.json", "degree_requirements"),
     (r"[^/]+/curriculum/(\d{4}-\d{4})\.json", "curriculum"),
 ]
 
@@ -204,15 +205,18 @@ def main():
         fac_ids = ids_of(fac_f.get("members", [])) if isinstance(fac_f, dict) else set()
         if inner.endswith("general/faculty.json"):
             dupes(rel, d.get("members", []), "id", "person id")
+            for mbr in d.get("members", []):
+                if mbr.get("first_year") and mbr.get("last_year") and mbr["last_year"] < mbr["first_year"]:
+                    problem(rel, f'{mbr.get("name", mbr.get("id"))}: "last_year" ({mbr["last_year"]}) is earlier than "first_year" ({mbr["first_year"]}).')
             sec_f = data.get((uni, f"{dept}/general/sectors.json"))
             if sec_f:
                 secs = ids_of(sec_f.get("sectors", []))
                 for mbr in d.get("members", []):
                     if mbr.get("sector") and mbr["sector"] not in secs:
                         problem(rel, f'{mbr.get("name", mbr.get("id"))} is in the sector "{mbr["sector"]}", which is not in sectors.json.')
-        if inner.endswith("general/sectors.json"):
+        if inner.endswith("/sectors.json"):
             dupes(rel, d.get("sectors", []), "id", "sector id")
-        if inner.endswith("general/administration.json"):
+        if inner.endswith("/administration.json"):
             dupes(rel, d.get("roles", []), "id", "role id")
             for r in d.get("roles", []):
                 if fac_ok and r.get("faculty_id") and r["faculty_id"] not in fac_ids:

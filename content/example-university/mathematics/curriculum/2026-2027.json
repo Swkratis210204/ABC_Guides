@@ -1,0 +1,9 @@
+{
+  "academic_year": "2026-2027",
+  "levels": [
+    { "id": "mandatory", "short": "M", "name": { "en": "Mandatory" } }
+  ],
+  "courses": [
+    { "code": "1001", "name": { "en": "Calculus I" }, "level": "mandatory", "ects": 6, "semesters": [1], "instructors": ["euler-leo"] }
+  ]
+}

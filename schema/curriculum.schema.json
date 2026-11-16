@@ -66,6 +66,10 @@
             "description": "Ids of the teachers, from faculty.json (optional)",
             "type": "array", "uniqueItems": true, "items": { "$ref": "urn:schema:common#/$defs/id" }
           },
+          "instructor_names": {
+            "description": "Names of teachers who are not in faculty.json, for example visiting or long-gone staff in an old year (optional)",
+            "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 }
+          },
           "language": { "description": "Language of teaching, as a two-letter code. Example: en", "type": "string", "pattern": "^[a-z]{2}$" },
           "description": { "$ref": "urn:schema:common#/$defs/text" },
           "active": { "description": "Write false if the course is no longer offered. Leave out otherwise.", "type": "boolean" }

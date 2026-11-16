@@ -1,0 +1,11 @@
+{
+  "academic_year": "2027-2028",
+  "levels": [
+    { "id": "mandatory", "short": "UP", "name": { "en": "Mandatory" } },
+    { "id": "elective", "short": "E", "name": { "en": "Elective" } }
+  ],
+  "courses": [
+    { "code": "1001", "name": { "en": "Discrete Mathematics" }, "level": "mandatory", "ects": 6, "semesters": [1] },
+    { "code": "3050", "name": { "en": "Machine Learning" }, "level": "elective", "ects": 6, "semesters": [5], "prerequisites": ["1001"] }
+  ]
+}

@@ -137,3 +137,45 @@ def test_unrecognised_file_is_reported(content):
     code, out = run(content)
     assert code == 1
     assert "do not recognise" in out
+
+
+# ---- Previous years ----------------------------------------------------------------------
+
+OLD_CURRICULUM = "example-university/computer-science/curriculum/2022-2023.json"
+OLD_ADMIN = "example-university/computer-science/general/2022-2023/administration.json"
+
+
+def test_old_year_may_use_former_teacher_and_names_not_in_faculty():
+    # The sample already contains such a year; it must pass.
+    code, out = run(SAMPLE)
+    assert code == 0, out
+
+
+def test_old_year_courses_are_still_checked(content):
+    edit(content, OLD_CURRICULUM, lambda d: d["courses"][0].update(instructors=["nobody"]))
+    code, out = run(content)
+    assert code == 1
+    assert '"nobody", who is not in faculty.json' in out
+
+
+def test_old_year_administration_is_checked(content):
+    edit(content, OLD_ADMIN, lambda d: d["roles"][0].update(faculty_id="nobody"))
+    code, out = run(content)
+    assert code == 1
+    assert '"nobody", who is not in faculty.json' in out
+
+
+def test_last_year_before_first_year_is_caught(content):
+    def change(d):
+        d["members"][-1].update(first_year="2020-2021", last_year="2015-2016")
+    edit(content, FACULTY, change)
+    code, out = run(content)
+    assert code == 1
+    assert "is earlier than" in out
+
+
+def test_old_year_file_in_wrong_folder_is_reported(content):
+    (content / "example-university" / "computer-science" / "general" / "2022-2023" / "faculty.json").write_text("{}", encoding="utf-8")
+    code, out = run(content)
+    assert code == 1
+    assert "do not recognise" in out

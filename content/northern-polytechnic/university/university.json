@@ -1,0 +1,6 @@
+{
+  "name": { "el": "Πολυτεχνείο του Βορρά", "en": "Northern Polytechnic" },
+  "short_name": "NP",
+  "languages": ["el", "en"],
+  "default_language": "el"
+}

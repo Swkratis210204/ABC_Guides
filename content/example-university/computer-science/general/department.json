@@ -3,5 +3,7 @@
   "school": "sciences",
   "website": "https://cs.example.edu",
   "email": "office@cs.example.edu",
+  "phone": "+00 123 4500",
+  "address": "1 University Road, Example City",
   "about": { "en": "A sample department used to show how the files fit together." }
 }

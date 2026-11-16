@@ -1,0 +1,7 @@
+{
+  "academic_year": "2022-2023",
+  "terms": [
+    { "id": "winter", "name": { "en": "Winter semester" }, "start": "2022-10-03", "end": "2023-01-13" },
+    { "id": "spring", "name": { "en": "Spring semester" }, "start": "2023-02-13", "end": "2023-05-26" }
+  ]
+}

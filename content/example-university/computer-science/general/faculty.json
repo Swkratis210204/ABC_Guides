@@ -1,6 +1,15 @@
 {
   "members": [
-    { "id": "morgan-alex", "name": "Alex Morgan", "rank": "professor", "sector": "systems", "email": "morgan@cs.example.edu" },
-    { "id": "lee-jordan", "name": "Jordan Lee", "rank": "assistant_professor", "sector": "theory", "status": "on_leave" }
+    { "id": "morgan-alex", "name": "Alex Morgan", "rank": "professor", "sector": "systems", "status": "active",
+      "email": "morgan@cs.example.edu", "phone": "+00 123 4567", "office": "B2.14", "website": "https://cs.example.edu/morgan" },
+    { "id": "lee-jordan", "name": "Jordan Lee", "rank": "associate_professor", "sector": "theory", "status": "on_leave" },
+    { "id": "kim-robin", "name": "Robin Kim", "rank": "assistant_professor", "sector": "systems" },
+    { "id": "diaz-casey", "name": "Casey Diaz", "rank": "lecturer", "sector": "theory", "status": "retired" },
+    { "id": "ng-taylor", "name": "Taylor Ng", "rank": "teaching_staff", "status": "active" },
+    { "id": "singh-riley", "name": "Riley Singh", "rank": "researcher", "sector": "systems" },
+    { "id": "ford-drew", "name": "Drew Ford", "rank": "visiting", "status": "emeritus" },
+    { "id": "park-sky", "name": "Sky Park", "rank": "other" },
+    { "id": "stone-avery", "name": "Avery Stone", "rank": "professor", "sector": "theory", "status": "former",
+      "first_year": "2010-2011", "last_year": "2022-2023" }
   ]
 }

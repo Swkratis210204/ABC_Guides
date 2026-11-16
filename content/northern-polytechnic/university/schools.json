@@ -1,0 +1,5 @@
+{
+  "schools": [
+    { "id": "engineering", "name": { "el": "Σχολή Μηχανικών", "en": "School of Engineering" } }
+  ]
+}

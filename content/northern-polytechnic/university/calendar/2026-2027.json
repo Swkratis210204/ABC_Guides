@@ -1,0 +1,8 @@
+{
+  "academic_year": "2026-2027",
+  "terms": [
+    { "id": "autumn", "name": { "el": "Φθινοπωρινό", "en": "Autumn" }, "start": "2026-09-21", "end": "2026-12-18" },
+    { "id": "winter", "name": { "el": "Χειμερινό", "en": "Winter" }, "start": "2027-01-11", "end": "2027-04-02" },
+    { "id": "summer", "name": { "el": "Θερινό", "en": "Summer" }, "start": "2027-04-19", "end": "2027-07-09" }
+  ]
+}

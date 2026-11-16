@@ -1,0 +1,5 @@
+{
+  "sectors": [
+    { "id": "analysis", "name": { "en": "Analysis" }, "description": { "en": "Calculus and its generalisations." } }
+  ]
+}

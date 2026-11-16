@@ -52,6 +52,12 @@ Department — curriculum (one per academic year)
 ├── cycles
 └── courses
 
+### Previous years (may be added later)
+We may also want to publish content from previous academic years, not only the current one.
+- Each academic year keeps its own curriculum file, so old years are never overwritten.
+- Adding an old year should work the same way as adding a new one (one new JSON file).
+- The schema must not assume there is only one current year.
+
 ### Current status
 - Phase 0 in progress: designing the JSON schema
 - One university populated: AUEB, CS department

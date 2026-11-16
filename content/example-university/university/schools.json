@@ -1,5 +1,6 @@
 {
   "schools": [
-    { "id": "sciences", "name": { "en": "School of Sciences" } }
+    { "id": "sciences", "name": { "en": "School of Sciences" }, "website": "https://sciences.example.edu" },
+    { "id": "humanities", "name": { "en": "School of Humanities" } }
   ]
 }

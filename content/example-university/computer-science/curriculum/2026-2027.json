@@ -1,44 +1,31 @@
 {
   "academic_year": "2026-2027",
-  "ects_caps": { "per_semester": 36 },
+  "ects_caps": { "per_semester": 36, "per_year": 66 },
   "levels": [
-    { "id": "mandatory", "short": "UP", "name": { "en": "Mandatory" } },
+    { "id": "mandatory", "short": "UP", "name": { "en": "Mandatory" }, "description": { "en": "Every student must pass these." } },
     { "id": "core-elective", "short": "EP", "name": { "en": "Core elective" } },
     { "id": "elective", "short": "E", "name": { "en": "Elective" } },
     { "id": "free", "short": "EL", "name": { "en": "Free elective" } }
   ],
   "cycles": [
-    { "id": "data", "name": { "en": "Data and AI" } },
+    { "id": "data", "name": { "en": "Data and AI" }, "description": { "en": "Courses about data and machine learning." } },
     { "id": "theory", "name": { "en": "Theory" } }
   ],
   "courses": [
     {
       "code": "1001",
-      "name": { "en": "Discrete Mathematics" },
+      "name": { "en": "Discrete Mathematics", "fr": "Mathématiques discrètes" },
       "level": "mandatory",
       "ects": 6,
       "semesters": [1],
       "instructors": ["lee-jordan"],
       "cycles": ["theory"],
-      "description": { "en": "Sets, logic, proofs, combinatorics and graphs." }
+      "language": "en",
+      "description": { "en": "Sets, logic, proofs, combinatorics and graphs." },
+      "active": true
     },
-    {
-      "code": "1002",
-      "name": { "en": "Programming" },
-      "level": "mandatory",
-      "ects": 6,
-      "semesters": [1],
-      "instructors": ["morgan-alex"]
-    },
-    {
-      "code": "2010",
-      "name": { "en": "Data Structures" },
-      "level": "mandatory",
-      "ects": 7,
-      "semesters": [3],
-      "prerequisites": ["1002"],
-      "instructors": ["morgan-alex"]
-    },
+    { "code": "1002", "name": { "en": "Programming" }, "level": "mandatory", "ects": 6, "semesters": [1], "instructors": ["morgan-alex", "kim-robin"] },
+    { "code": "2010", "name": { "en": "Data Structures" }, "level": "mandatory", "ects": 7.5, "semesters": [3], "prerequisites": ["1002"], "instructors": ["morgan-alex"] },
     {
       "code": "3050",
       "name": { "en": "Machine Learning" },
@@ -46,8 +33,9 @@
       "ects": 6,
       "semesters": [5, 6],
       "prerequisites": ["1001", "2010"],
-      "cycles": ["data"],
-      "language": "en"
-    }
+      "cycles": ["data", "theory"]
+    },
+    { "code": "3900", "name": { "en": "Thesis" }, "level": "elective", "ects": 12, "semesters": [7, 8] },
+    { "code": "4001", "name": { "en": "Old Course No Longer Offered" }, "level": "free", "ects": 3, "semesters": [8], "active": false }
   ]
 }

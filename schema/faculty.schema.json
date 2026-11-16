@@ -18,7 +18,9 @@
             "enum": ["professor", "associate_professor", "assistant_professor", "lecturer", "teaching_staff", "researcher", "visiting", "other"]
           },
           "sector": { "description": "The id of this person's sector (from sectors.json)", "$ref": "urn:schema:common#/$defs/id" },
-          "status": { "description": "One of: active, on_leave, retired, emeritus. Leave out if active.", "enum": ["active", "on_leave", "retired", "emeritus"] },
+          "status": { "description": "One of: active, on_leave, retired, emeritus, former. Leave out if active. Use former for people who left: keep them in the list so old years can still refer to them.", "enum": ["active", "on_leave", "retired", "emeritus", "former"] },
+          "first_year": { "description": "First academic year this person taught here (optional). Example: 2015-2016", "$ref": "urn:schema:common#/$defs/academic_year" },
+          "last_year": { "description": "Last academic year this person taught here (optional). Example: 2023-2024", "$ref": "urn:schema:common#/$defs/academic_year" },
           "email": { "$ref": "urn:schema:common#/$defs/email" },
           "phone": { "type": "string" },
           "office": { "type": "string" },
