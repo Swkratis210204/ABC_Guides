@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:faculty",
+  "title": "Teaching and research staff (general/faculty.json)",
+  "type": "object",
+  "required": ["members"],
+  "additionalProperties": false,
+  "properties": {
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["id", "name"], "additionalProperties": false,
+        "properties": {
+          "id": { "description": "A short code for this person. Example: smith-john", "$ref": "urn:schema:common#/$defs/id" },
+          "name": { "description": "Full name as it should appear on the site", "type": "string", "minLength": 1 },
+          "rank": {
+            "description": "One of: professor, associate_professor, assistant_professor, lecturer, teaching_staff, researcher, visiting, other",
+            "enum": ["professor", "associate_professor", "assistant_professor", "lecturer", "teaching_staff", "researcher", "visiting", "other"]
+          },
+          "sector": { "description": "The id of this person's sector (from sectors.json)", "$ref": "urn:schema:common#/$defs/id" },
+          "status": { "description": "One of: active, on_leave, retired, emeritus. Leave out if active.", "enum": ["active", "on_leave", "retired", "emeritus"] },
+          "email": { "$ref": "urn:schema:common#/$defs/email" },
+          "phone": { "type": "string" },
+          "office": { "type": "string" },
+          "website": { "$ref": "urn:schema:common#/$defs/url" }
+        }
+      }
+    }
+  }
+}

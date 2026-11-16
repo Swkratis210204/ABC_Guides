@@ -1,0 +1,6 @@
+{
+  "members": [
+    { "id": "morgan-alex", "name": "Alex Morgan", "rank": "professor", "sector": "systems", "email": "morgan@cs.example.edu" },
+    { "id": "lee-jordan", "name": "Jordan Lee", "rank": "assistant_professor", "sector": "theory", "status": "on_leave" }
+  ]
+}

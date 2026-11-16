@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:common",
+  "title": "Building blocks shared by all files",
+  "$defs": {
+    "id": {
+      "description": "A short code for this item. Use only small letters, digits and dashes, no spaces. Example: data-science",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "text": {
+      "description": "Text that people read. Write it once per language, using the two-letter language code. Example: { \"en\": \"Databases\", \"el\": \"Βάσεις Δεδομένων\" }. One language is enough.",
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "pattern": "^[a-z]{2}$" },
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "date": {
+      "description": "A date written as year-month-day. Example: 2026-10-05",
+      "type": "string",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+    },
+    "academic_year": {
+      "description": "Two years joined by a dash. Example: 2026-2027",
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{4}$"
+    },
+    "url": {
+      "description": "A web address starting with https://",
+      "type": "string",
+      "pattern": "^https?://\\S+$"
+    },
+    "email": {
+      "description": "An email address. Example: office@example.edu",
+      "type": "string",
+      "pattern": "^\\S+@\\S+\\.\\S+$"
+    },
+    "ects": {
+      "description": "Number of ECTS credits (a number such as 6 or 7.5)",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 60
+    }
+  }
+}

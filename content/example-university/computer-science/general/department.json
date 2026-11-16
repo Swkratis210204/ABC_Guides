@@ -1,0 +1,7 @@
+{
+  "name": { "en": "Department of Computer Science" },
+  "school": "sciences",
+  "website": "https://cs.example.edu",
+  "email": "office@cs.example.edu",
+  "about": { "en": "A sample department used to show how the files fit together." }
+}

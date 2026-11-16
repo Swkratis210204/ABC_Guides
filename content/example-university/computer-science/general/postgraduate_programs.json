@@ -1,0 +1,5 @@
+{
+  "programs": [
+    { "id": "msc-data-science", "name": { "en": "MSc in Data Science" }, "degree": "masters", "duration_semesters": 3, "ects": 90, "director": "lee-jordan" }
+  ]
+}

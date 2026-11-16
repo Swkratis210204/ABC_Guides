@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:postgraduate_programs",
+  "title": "Postgraduate programs (general/postgraduate_programs.json)",
+  "type": "object",
+  "required": ["programs"],
+  "additionalProperties": false,
+  "properties": {
+    "programs": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["id", "name", "degree"], "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "urn:schema:common#/$defs/id" },
+          "name": { "$ref": "urn:schema:common#/$defs/text" },
+          "degree": { "description": "One of: masters, phd, mba, diploma, other", "enum": ["masters", "phd", "mba", "diploma", "other"] },
+          "duration_semesters": { "description": "How many semesters the program lasts", "type": "integer", "minimum": 1 },
+          "ects": { "description": "Total ECTS of the program", "type": "number", "minimum": 0 },
+          "director": { "description": "The id of the director in faculty.json (optional)", "$ref": "urn:schema:common#/$defs/id" },
+          "website": { "$ref": "urn:schema:common#/$defs/url" },
+          "description": { "$ref": "urn:schema:common#/$defs/text" }
+        }
+      }
+    }
+  }
+}

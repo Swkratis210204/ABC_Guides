@@ -1,0 +1,6 @@
+{
+  "note": { "en": "Any student may take these courses as free electives." },
+  "courses": [
+    { "code": "9001", "name": { "en": "Introduction to Philosophy" }, "ects": 5, "offered_by": "Department of Humanities" }
+  ]
+}

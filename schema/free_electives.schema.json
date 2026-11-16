@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:free_electives",
+  "title": "Free electives pool: courses any student of the university may take (university/free_electives.json)",
+  "type": "object",
+  "required": ["courses"],
+  "additionalProperties": false,
+  "properties": {
+    "note": { "description": "Optional rules or explanation shown above the list", "$ref": "urn:schema:common#/$defs/text" },
+    "courses": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["code", "name", "ects"], "additionalProperties": false,
+        "properties": {
+          "code": { "description": "The course code, exactly as the university prints it. Example: 4102", "type": "string", "minLength": 1 },
+          "name": { "$ref": "urn:schema:common#/$defs/text" },
+          "ects": { "$ref": "urn:schema:common#/$defs/ects" },
+          "offered_by": { "description": "Name of the department that teaches it", "type": "string" }
+        }
+      }
+    }
+  }
+}

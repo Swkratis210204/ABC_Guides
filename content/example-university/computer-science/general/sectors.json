@@ -1,0 +1,6 @@
+{
+  "sectors": [
+    { "id": "systems", "name": { "en": "Systems" } },
+    { "id": "theory", "name": { "en": "Theory" } }
+  ]
+}

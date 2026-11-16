@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:grading_scale",
+  "title": "Grading scale (university/grading_scale.json)",
+  "type": "object",
+  "required": ["min_grade", "max_grade", "pass_grade"],
+  "additionalProperties": false,
+  "properties": {
+    "min_grade": { "description": "Lowest possible grade. Example: 0", "type": "number" },
+    "max_grade": { "description": "Highest possible grade. Example: 10", "type": "number" },
+    "pass_grade": { "description": "Lowest passing grade. Example: 5", "type": "number" },
+    "bands": {
+      "description": "Optional named ranges, such as Excellent or Good",
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["name", "from", "to"], "additionalProperties": false,
+        "properties": {
+          "name": { "$ref": "urn:schema:common#/$defs/text" },
+          "from": { "type": "number" },
+          "to": { "type": "number" }
+        }
+      }
+    }
+  }
+}

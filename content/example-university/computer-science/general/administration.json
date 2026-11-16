@@ -1,0 +1,6 @@
+{
+  "roles": [
+    { "id": "head", "title": { "en": "Head of Department" }, "person": "Alex Morgan", "faculty_id": "morgan-alex", "email": "head@cs.example.edu" },
+    { "id": "secretariat", "title": { "en": "Secretariat" }, "person": "Sam Rivera", "email": "secretariat@cs.example.edu" }
+  ]
+}

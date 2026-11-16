@@ -1,0 +1,8 @@
+{
+  "name": { "en": "Example University" },
+  "short_name": "EXU",
+  "website": "https://www.example.edu",
+  "country": "Exampleland",
+  "languages": ["en"],
+  "default_language": "en"
+}

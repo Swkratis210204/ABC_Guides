@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:administration",
+  "title": "Administration: head of department, secretariat, committees (general/administration.json)",
+  "type": "object",
+  "required": ["roles"],
+  "additionalProperties": false,
+  "properties": {
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["id", "title", "person"], "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "urn:schema:common#/$defs/id" },
+          "title": { "description": "The role. Example: Head of Department", "$ref": "urn:schema:common#/$defs/text" },
+          "person": { "description": "Full name of the person", "type": "string", "minLength": 1 },
+          "faculty_id": { "description": "If this person is in faculty.json, their id there (optional)", "$ref": "urn:schema:common#/$defs/id" },
+          "email": { "$ref": "urn:schema:common#/$defs/email" },
+          "phone": { "type": "string" }
+        }
+      }
+    }
+  }
+}

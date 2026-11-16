@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:university",
+  "title": "University: basic information (university/university.json)",
+  "type": "object",
+  "required": ["name", "default_language"],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "description": "Full name of the university", "$ref": "urn:schema:common#/$defs/text" },
+    "short_name": { "description": "Short name or abbreviation. Example: AUEB", "type": "string" },
+    "website": { "$ref": "urn:schema:common#/$defs/url" },
+    "country": { "description": "Country name", "type": "string" },
+    "languages": {
+      "description": "Languages the site is written in, as two-letter codes. Example: [\"el\", \"en\"]",
+      "type": "array", "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z]{2}$" }
+    },
+    "default_language": { "description": "The language shown first. Must be one of the languages above. Example: el", "type": "string", "pattern": "^[a-z]{2}$" }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "academic_year": "2026-2027",
+  "ects_caps": { "per_semester": 36 },
+  "levels": [
+    { "id": "mandatory", "short": "UP", "name": { "en": "Mandatory" } },
+    { "id": "core-elective", "short": "EP", "name": { "en": "Core elective" } },
+    { "id": "elective", "short": "E", "name": { "en": "Elective" } },
+    { "id": "free", "short": "EL", "name": { "en": "Free elective" } }
+  ],
+  "cycles": [
+    { "id": "data", "name": { "en": "Data and AI" } },
+    { "id": "theory", "name": { "en": "Theory" } }
+  ],
+  "courses": [
+    {
+      "code": "1001",
+      "name": { "en": "Discrete Mathematics" },
+      "level": "mandatory",
+      "ects": 6,
+      "semesters": [1],
+      "instructors": ["lee-jordan"],
+      "cycles": ["theory"],
+      "description": { "en": "Sets, logic, proofs, combinatorics and graphs." }
+    },
+    {
+      "code": "1002",
+      "name": { "en": "Programming" },
+      "level": "mandatory",
+      "ects": 6,
+      "semesters": [1],
+      "instructors": ["morgan-alex"]
+    },
+    {
+      "code": "2010",
+      "name": { "en": "Data Structures" },
+      "level": "mandatory",
+      "ects": 7,
+      "semesters": [3],
+      "prerequisites": ["1002"],
+      "instructors": ["morgan-alex"]
+    },
+    {
+      "code": "3050",
+      "name": { "en": "Machine Learning" },
+      "level": "core-elective",
+      "ects": 6,
+      "semesters": [5, 6],
+      "prerequisites": ["1001", "2010"],
+      "cycles": ["data"],
+      "language": "en"
+    }
+  ]
+}

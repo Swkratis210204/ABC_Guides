@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:sectors",
+  "title": "Sectors (research and teaching divisions) of the department (general/sectors.json)",
+  "type": "object",
+  "required": ["sectors"],
+  "additionalProperties": false,
+  "properties": {
+    "sectors": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["id", "name"], "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "urn:schema:common#/$defs/id" },
+          "name": { "$ref": "urn:schema:common#/$defs/text" },
+          "description": { "$ref": "urn:schema:common#/$defs/text" }
+        }
+      }
+    }
+  }
+}

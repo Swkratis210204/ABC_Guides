@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:department",
+  "title": "Department: basic information (general/department.json)",
+  "type": "object",
+  "required": ["name"],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "$ref": "urn:schema:common#/$defs/text" },
+    "school": { "description": "The id of the school this department belongs to (from schools.json)", "$ref": "urn:schema:common#/$defs/id" },
+    "website": { "$ref": "urn:schema:common#/$defs/url" },
+    "email": { "$ref": "urn:schema:common#/$defs/email" },
+    "phone": { "type": "string" },
+    "address": { "type": "string" },
+    "about": { "description": "A short introduction to the department", "$ref": "urn:schema:common#/$defs/text" }
+  }
+}
