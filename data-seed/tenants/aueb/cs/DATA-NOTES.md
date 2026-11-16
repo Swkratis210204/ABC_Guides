@@ -8,7 +8,7 @@ The files were first transcribed from the PDF, then compared field by field with
 
 ## Spreadsheet versus PDF
 
-The two agree on everything that could be compared: ECTS of all 68 courses, instructors, teaching language, offering department, the 23 faculty (rank, sector, on-leave flag) and the 20 free-elective codes. Differences, and what was done:
+The two agree on everything that could be compared: ECTS of all 68 courses, instructors, teaching language, offering department, the 23 faculty (rank, sector, on-leave flag) and the free-elective codes (see the free-electives section below). Differences, and what was done:
 
 | Difference | Decision |
 |------------|----------|
@@ -21,7 +21,7 @@ Nothing else in the spreadsheet adds data: it also gives no ECTS for the level-4
 
 ## Checks that were run
 
-- Counts match the guide's statements: 22 mandatory courses, 10 core electives, 8 cycles, 3 sectors, 8 semesters, 23 ΔΕΠ + 11 ΕΔΙΠ staff, 20 level-4 courses from other departments.
+- Counts match the guide's statements: 22 mandatory courses, 10 core electives, 8 cycles, 3 sectors, 8 semesters, 23 ΔΕΠ + 11 ΕΔΙΠ staff, level-4 courses from other departments (20 in the PDF; 109 after the update below).
 - **ECTS and semester** of all 22 ΥΠ and 10 ΕΠ courses match the second place the guide states them (the short-description lines, e.g. "3335 Δομές Δεδομένων (Γ΄, 7 ECTS)"). No mismatches.
 - **ECTS and cycles** of 34 of the 36 level-3 courses match a fresh parse of the guide's table rows. No mismatches. The other two (3802 Πτυχιακή Εργασία, 3850 Ερευνητική Εργασία) were checked by hand: 6 ECTS, cycles "κατά απόφαση επιβλέποντα".
 - Every course code in the guide is in `courses.json` and vice versa. The only other 4-digit codes in the guide are 3252 (the old «Λογιστική», mentioned in the transitional provisions) and 8203 (part of the department phone number).
@@ -70,7 +70,7 @@ Abbreviations resolved to codes (from the guide's usage): ΕΕΥ = 3135, ΟΣΥ 
 ## 5. Data limitations
 
 - **ECTS values include decimals** (6082 Γραμμική Άλγεβρα ΙΙ = 7.5, 6142 Πιθανότητες ΙΙ = 7.5). `ects` is therefore a number, not an integer.
-- **Level 4 (ΕΛ):** the guide lists 20 courses of other OPA departments with codes but **no ECTS and no semester**. They are stored with `"ects": null`. The ECTS calculator (not built yet) will report them as "ECTS unknown" and not count them.
+- **Level 4 (ΕΛ):** the guide lists courses of other OPA departments with codes but **no ECTS and no semester** (109 after the 2026-11-16 update, see below). They are stored with `"ects": null`. The ECTS calculator (not built yet) will report them as "ECTS unknown" and not count them.
 - Free electives offered by the department itself (Πρακτική Άσκηση, Ψηφιακό Εκπαιδευτικό Υλικό, foreign-language IV courses, Pedagogical program) have no codes. They are stored as text in `tenant.json → info.freeElectivesFromDepartment`.
 - **Instructors not in the faculty list** (stored by name only, `facultyId: null`): Δρ. Γιαννουλάκης Στυλιανός (3151), Δρ. Κώτσιος Παναγιώτης (3254), Δρ. Μαϊλής Θεόφιλος (3436). Presumably external/contract teaching staff.
 - Many courses have no instructor listed ("—"); they are stored with an empty instructor list.
@@ -78,3 +78,17 @@ Abbreviations resolved to codes (from the guide's usage): ΕΕΥ = 3135, ΟΣΥ 
 - The September resit period has no concrete dates in the guide ("last week of August, 4 weeks"). Stored as a note with null dates.
 - Staff status: "(άδεια)" is stored as `ON_LEAVE`, "(υπό διορισμό)" as `PENDING_APPOINTMENT`.
 - `offeredBy` tags (ΣΤΑ, ΔΕΤ, ΟΔΕ, ΛΟΧΡΗ, …) come from the course names in the guide. The department names in `tenant.json → info.offeredByLegend` are my expansion of those abbreviations, not text from the guide.
+
+## Free electives updated to 109 (2026-11-16)
+
+The PDF listed 20 free electives. The department's newer spreadsheets, `data/Π.Σ. ΠΛΗΡΟΦΟΡΙΚΗΣ.xlsx` (sheet "Ελεύθερες Επιλογές Μαθημάτων") and `data/AUEB_CS_Guide_2027.xlsx` (sheet "7. Free Electives"), list **108** (109 with 3090, below). The 20 old entries were replaced by these (decision of the project owner).
+
+- Codes come from `Π.Σ. ΠΛΗΡΟΦΟΡΙΚΗΣ.xlsx`; names and offering department from `AUEB_CS_Guide_2027.xlsx`, because the Π.Σ. file has names in capitals with extra annotations (e.g. "[1612]", "(logistics)"). Both files agree on all 108 codes. For the 17 courses that were already in the data, names and departments are unchanged.
+- No ECTS and no semester are given for any of them (`ects: null`), as before.
+- **Removed** (in the PDF, absent from both new spreadsheets): 2317 Μάνατζμεντ, 8170 Συστήματα Διαχείρισης Μεγάλων Δεδομένων, 8182 Ηθική, Υπευθυνότητα και Διακυβέρνηση.
+- **Added on request:** 3090 Ψηφιακό Εκπαιδευτικό Υλικό, a CS course that only the guide spreadsheet lists (stored without `offeredBy`, like the department's other courses). **Not imported:** the "Πρακτική Άσκηση" row, which has no course code (it has its own page).
+- Two names differ in wording between the files: 5677 (guide: "Σχεδιασμός Διαφημιστικών Μηνυμάτων"; Π.Σ.: "…Δημιουργικού και Διαφημιστικών Μηνυμάτων") and 6256 (guide abbreviates). The guide's wording was kept. Confirmed by the project owner (2026-11-16). The department name "Τμήμα Μάρκετινγκ και Επικοινωνίας" for the code "Μάρκετινγκ" (added to `offeredByLegend`) is also confirmed.
+
+## ✅ Internship prerequisite: "at most 4" (resolved by the project owner, 2026-11-16)
+
+`AUEB_CS_Guide_2027.xlsx` (sheet 7) says a student may lack at most **two** mandatory courses to start the internship; `_Πρακτική Πληροφορική.xlsx` says at most **four**. The PDF guide only says the internship is optional. The project owner chose **four**, which is what `internship.json` shows. The guide spreadsheet's "two" is therefore known to differ.

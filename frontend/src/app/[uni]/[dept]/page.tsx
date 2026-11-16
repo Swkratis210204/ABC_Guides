@@ -40,6 +40,8 @@ export default async function DepartmentHome({ params }: Props) {
         <SectionCard href={`${base}/faculty`} title="Διδάσκοντες" meta={`${info.counts.faculty} μέλη προσωπικού · ανά τομέα`} />
         <SectionCard href={`${base}/requirements`} title="Προϋποθέσεις πτυχίου" meta="Κανόνες και υπολογιστής ECTS" />
         <SectionCard href={`${base}/calendar`} title="Ακαδημαϊκό ημερολόγιο" meta="Εξάμηνα, εξεταστικές, αργίες" />
+        <SectionCard href={`${base}/internship`} title="Πρακτική Άσκηση" meta="Διάρκεια, προϋποθέσεις, χρηματοδότηση" />
+        <SectionCard href={`${base}/faq`} title="Συχνές ερωτήσεις" meta="Γραμματεία, μαθήματα, πτυχίο, ακύρωση βαθμολογίας" />
       </div>
 
       <h2>Στοιχεία τμήματος</h2>

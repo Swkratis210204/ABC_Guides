@@ -3,6 +3,7 @@ package app.deptinfo.data;
 import app.deptinfo.calendar.AcademicCalendar;
 import app.deptinfo.courses.Course;
 import app.deptinfo.faculty.FacultyMember;
+import app.deptinfo.qa.QaPage;
 import app.deptinfo.requirements.Requirements;
 import app.deptinfo.tenant.TenantKey;
 import app.deptinfo.tenant.TenantMeta;
@@ -62,6 +63,47 @@ public class DataValidator {
         validateRequirements(requirements, courses, levels, errors, warnings);
         validateCalendar(calendar, errors);
         return new Result(errors, warnings);
+    }
+
+    // ------------------------------------------------------------------ faq.json / internship.json
+
+    /** Checks a Q&A page: every section and question needs an id (unique) and non-blank Greek text. */
+    public void validateQa(String file, QaPage page, List<String> errors) {
+        if (page == null) {
+            return;
+        }
+        if (page.schemaVersion() != SCHEMA_VERSION) {
+            errors.add(file + ": unsupported schemaVersion " + page.schemaVersion());
+        }
+        Set<String> sectionIds = new HashSet<>();
+        Set<String> itemIds = new HashSet<>();
+        for (QaPage.Section sec : page.sections()) {
+            String where = file + " section[" + sec.id() + "]";
+            if (sec.id() == null || !sectionIds.add(sec.id())) {
+                errors.add(where + ": missing or duplicate id");
+            }
+            if (sec.title() == null || sec.title().isBlank()) {
+                errors.add(where + ": title is missing");
+            }
+            for (QaPage.Item it : sec.items()) {
+                String iw = file + " item[" + it.id() + "]";
+                if (it.id() == null || !itemIds.add(it.id())) {
+                    errors.add(iw + ": missing or duplicate id");
+                }
+                if (it.question() == null || it.question().isBlank()) {
+                    errors.add(iw + ": question is missing");
+                }
+                if (it.answer() == null || it.answer().isBlank()) {
+                    errors.add(iw + ": answer is missing");
+                }
+                for (QaPage.Link l : it.links()) {
+                    if (l.label() == null || l.label().isBlank() || l.url() == null
+                            || !(l.url().startsWith("https://") || l.url().startsWith("mailto:"))) {
+                        errors.add(iw + ": link needs a label and an https: or mailto: url");
+                    }
+                }
+            }
+        }
     }
 
     // ------------------------------------------------------------------ tenant.json

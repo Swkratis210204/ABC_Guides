@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CourseGroups } from "@/components/CourseGroups";
 import { LevelBadge } from "@/components/LevelBadge";
 import { api } from "@/lib/api";
-import { groupBySemester, rulesForLevel, totals } from "@/lib/grouping";
+import { groupByDepartment, groupBySemester, rulesForLevel, totals } from "@/lib/grouping";
 import { departmentBase, fmt, t } from "@/lib/labels";
 
 export const dynamic = "force-dynamic";
@@ -57,7 +57,7 @@ export default async function LevelPage({ params }: { params: Promise<{ uni: str
         </div>
       ) : null}
 
-      <CourseGroups groups={groupBySemester(courses, info)} info={info} base={base} show={["cycles"]} semesterTag />
+      <CourseGroups groups={isFree ? groupByDepartment(courses, info) : groupBySemester(courses, info)} info={info} base={base} show={["cycles"]} semesterTag />
 
       {isFree && info.info.freeElectivesFromDepartment?.length ? (
         <>

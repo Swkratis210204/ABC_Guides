@@ -35,7 +35,7 @@ class SeedDataTest {
         assertThat(perLevel).containsEntry("CORE_MANDATORY", 22L)   // "22 υποχρεωτικά μαθήματα πυρήνα"
                 .containsEntry("CORE_ELECTIVE", 10L)                // "ΕΠ: 10 διαθέσιμα"
                 .containsEntry("ELECTIVE", 36L)
-                .containsEntry("FREE", 20L);
+                .containsEntry("FREE", 109L);
 
         assertThat(s.meta().cycles()).hasSize(8);                  // "8 Κύκλοι Σπουδών"
         assertThat(s.meta().sectors()).hasSize(3);                 // "Τρεις Ερευνητικοί Τομείς"

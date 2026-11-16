@@ -17,6 +17,23 @@ export function groupByLevel(courses: CourseSummary[], info: DepartmentInfo): Co
 }
 
 /**
+ * One group per offering department (free electives from other departments). Courses with no `offeredBy` belong to
+ * the home department and come first; the others follow, largest department first. Names come from the tenant's legend.
+ */
+export function groupByDepartment(courses: CourseSummary[], info: DepartmentInfo): CourseGroup[] {
+  const legend = info.info.offeredByLegend ?? {};
+  const by = new Map<string, CourseSummary[]>();
+  for (const c of courses) by.set(c.offeredBy ?? "", [...(by.get(c.offeredBy ?? "") ?? []), c]);
+  return [...by.entries()]
+    .sort(([ka, a], [kb, b]) => (ka === "" ? -1 : kb === "" ? 1 : b.length - a.length || ka.localeCompare(kb, "el")))
+    .map(([key, list]) => ({
+      key: `d-${key || "home"}`,
+      title: key === "" ? t(info.department.name) : (legend[key] ?? key),
+      courses: list,
+    }));
+}
+
+/**
  * One group per semester. A course offered in two semesters (e.g. Ζ΄/Η΄) is listed once, under the first,
  * so totals are not counted twice. Courses with no semester (free electives) form a last group.
  */

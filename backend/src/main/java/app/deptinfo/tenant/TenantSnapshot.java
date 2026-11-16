@@ -3,6 +3,7 @@ package app.deptinfo.tenant;
 import app.deptinfo.calendar.AcademicCalendar;
 import app.deptinfo.courses.Course;
 import app.deptinfo.faculty.FacultyMember;
+import app.deptinfo.qa.QaPage;
 import app.deptinfo.requirements.Requirements;
 
 import java.util.HashMap;
@@ -22,11 +23,14 @@ public record TenantSnapshot(
         List<FacultyMember> faculty,
         Requirements requirements,
         AcademicCalendar calendar,
+        QaPage faq,
+        QaPage internship,
         Map<String, Course> coursesByCode,
         Map<String, FacultyMember> facultyById) {
 
     public static TenantSnapshot of(TenantKey key, TenantMeta meta, List<Course> courses, List<FacultyMember> faculty,
-                                    Requirements requirements, AcademicCalendar calendar) {
+                                    Requirements requirements, AcademicCalendar calendar, QaPage faq,
+                                    QaPage internship) {
         Map<String, Course> byCode = new HashMap<>();
         for (Course c : courses) {
             byCode.put(normalize(c.code()), c);
@@ -36,7 +40,7 @@ public record TenantSnapshot(
             byId.put(normalize(f.id()), f);
         }
         return new TenantSnapshot(key, meta, List.copyOf(courses), List.copyOf(faculty), requirements, calendar,
-                Map.copyOf(byCode), Map.copyOf(byId));
+                faq == null ? QaPage.EMPTY : faq, internship == null ? QaPage.EMPTY : internship, Map.copyOf(byCode), Map.copyOf(byId));
     }
 
     /** Course lookup, case-insensitive. */

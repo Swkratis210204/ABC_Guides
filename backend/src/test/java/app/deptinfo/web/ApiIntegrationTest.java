@@ -52,7 +52,7 @@ class ApiIntegrationTest {
     @Test
     void departmentInfoCarriesTaxonomiesWithCounts() throws Exception {
         mvc.perform(get(BASE)).andExpect(status().isOk())
-                .andExpect(jsonPath("$.counts.courses").value(88))
+                .andExpect(jsonPath("$.counts.courses").value(177))
                 .andExpect(jsonPath("$.counts.faculty").value(34))
                 .andExpect(jsonPath("$.semesters", hasSize(8)))
                 .andExpect(jsonPath("$.semesters[2].label").value("Γ΄"))
@@ -64,7 +64,7 @@ class ApiIntegrationTest {
                 .andExpect(jsonPath("$.levels[0].courseCount").value(22))
                 .andExpect(jsonPath("$.levels[1].courseCount").value(10))
                 .andExpect(jsonPath("$.levels[2].courseCount").value(36))
-                .andExpect(jsonPath("$.levels[3].courseCount").value(20))
+                .andExpect(jsonPath("$.levels[3].courseCount").value(109))
                 .andExpect(jsonPath("$.cycles", hasSize(8)))
                 .andExpect(jsonPath("$.cycles[7].id").value("cybersecurity"))
                 .andExpect(jsonPath("$.cycles[7].courseCount").value(6))
@@ -77,9 +77,9 @@ class ApiIntegrationTest {
     @Test
     void listsAllCoursesWhenUnfiltered() throws Exception {
         mvc.perform(get(BASE + "/courses")).andExpect(status().isOk())
-                .andExpect(jsonPath("$", hasSize(88)))
+                .andExpect(jsonPath("$", hasSize(177)))
                 .andExpect(jsonPath("$[0].semesters[0]").value(1))               // semester order first
-                .andExpect(jsonPath("$[87].level").value("FREE"));               // courses without a semester last
+                .andExpect(jsonPath("$[176].level").value("FREE"));               // courses without a semester last
     }
 
     @Test
@@ -193,6 +193,19 @@ class ApiIntegrationTest {
                 .andExpect(jsonPath("$.examPeriods[2].start").doesNotExist());     // resit has no dates in the guide
     }
 
+    // ---------------------------------------------------------------- FAQ and internship
+
+    @Test
+    void servesFaqAndInternship() throws Exception {
+        mvc.perform(get(BASE + "/faq")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.sections", hasSize(6)))
+                .andExpect(jsonPath("$.sections[0].title.el").value("Γραμματεία"))
+                .andExpect(jsonPath("$.sections[*].items[*].id", hasSize(30)));
+        mvc.perform(get(BASE + "/internship")).andExpect(status().isOk())
+                .andExpect(jsonPath("$.title.el").value("Πρακτική Άσκηση"))
+                .andExpect(jsonPath("$.sections[*].items[*].id", hasSize(8)));
+    }
+
     // ---------------------------------------------------------------- ECTS calculator
 
     private static final String CALC = BASE + "/ects-calculator";
@@ -287,9 +300,9 @@ class ApiIntegrationTest {
         mvc.perform(post("/api/admin/reload").header("X-Admin-Key", "test-key")).andExpect(status().isOk())
                 .andExpect(jsonPath("$.ok").value(true))
                 .andExpect(jsonPath("$.tenants[0].tenant").value("aueb/cs"))
-                .andExpect(jsonPath("$.tenants[0].courses").value(88))
+                .andExpect(jsonPath("$.tenants[0].courses").value(177))
                 .andExpect(jsonPath("$.tenants[0].errors", hasSize(0)));
-        mvc.perform(get(BASE + "/courses")).andExpect(jsonPath("$", hasSize(88)));   // data still served after reload
+        mvc.perform(get(BASE + "/courses")).andExpect(jsonPath("$", hasSize(177)));   // data still served after reload
     }
 
     @Test

@@ -3,6 +3,7 @@ package app.deptinfo.data;
 import app.deptinfo.calendar.AcademicCalendar;
 import app.deptinfo.courses.Course;
 import app.deptinfo.faculty.FacultyMember;
+import app.deptinfo.qa.QaPage;
 import app.deptinfo.requirements.Requirements;
 import app.deptinfo.tenant.TenantKey;
 import app.deptinfo.tenant.TenantMeta;
@@ -23,7 +24,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 /**
- * Reads tenants/{uni}/{dept}/ folders from disk. Each tenant needs five files; unknown JSON properties are rejected so
+ * Reads tenants/{uni}/{dept}/ folders from disk. Each tenant needs five files (plus the optional faq.json and internship.json); unknown JSON properties are rejected so
  * a mistyped column name becomes an error instead of silently lost data.
  */
 @Component
@@ -34,6 +35,9 @@ public class DataLoader {
     public static final String FACULTY_FILE = "faculty.json";
     public static final String REQUIREMENTS_FILE = "requirements.json";
     public static final String CALENDAR_FILE = "calendar.json";
+    /** Optional: a tenant without these files simply has empty FAQ / internship pages. */
+    public static final String FAQ_FILE = "faq.json";
+    public static final String INTERNSHIP_FILE = "internship.json";
 
     private final ObjectMapper mapper = new ObjectMapper()
             .registerModule(new JavaTimeModule())
@@ -85,15 +89,27 @@ public class DataLoader {
         Requirements requirements = read(dir, REQUIREMENTS_FILE, new TypeReference<Requirements>() {}, errors);
         AcademicCalendar calendar = read(dir, CALENDAR_FILE, new TypeReference<AcademicCalendar>() {}, errors);
 
+        QaPage faq = readOptional(dir, FAQ_FILE, errors);
+        QaPage internship = readOptional(dir, INTERNSHIP_FILE, errors);
+
         if (!errors.isEmpty()) {
             return new TenantLoadResult(key, dir, null, errors, List.of());
         }
         DataValidator.Result result = validator.validate(key, meta, courses, faculty, requirements, calendar);
+        validator.validateQa(FAQ_FILE, faq, result.errors());
+        validator.validateQa(INTERNSHIP_FILE, internship, result.errors());
         if (!result.ok()) {
             return new TenantLoadResult(key, dir, null, result.errors(), result.warnings());
         }
-        return new TenantLoadResult(key, dir, TenantSnapshot.of(key, meta, courses, faculty, requirements, calendar),
+        return new TenantLoadResult(key, dir, TenantSnapshot.of(key, meta, courses, faculty, requirements, calendar, faq, internship),
                 List.of(), result.warnings());
+    }
+
+    private QaPage readOptional(Path dir, String file, List<String> errors) {
+        if (!Files.isRegularFile(dir.resolve(file))) {
+            return QaPage.EMPTY;
+        }
+        return read(dir, file, new TypeReference<QaPage>() {}, errors);
     }
 
     private <T> T read(Path dir, String file, TypeReference<T> type, List<String> errors) {

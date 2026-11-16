@@ -168,6 +168,28 @@ export interface AcademicCalendar {
   holidays: (CalendarItem & { kind: "BREAK" | "PUBLIC_HOLIDAY" })[];
 }
 
+export interface QaItem {
+  id: string;
+  question: I18n;
+  answer: I18n;
+  note?: I18n;
+  links?: { label: string; url: string }[];
+}
+
+export interface QaSection {
+  id: string;
+  title: I18n;
+  items: QaItem[];
+}
+
+/** Used by both the FAQ and the internship page. */
+export interface QaPage {
+  schemaVersion: number;
+  title?: I18n;
+  intro?: I18n;
+  sections: QaSection[];
+}
+
 export interface CalculatorResult {
   /** userProvided: the part of `earned` the user typed in (the guide gives no ECTS for those courses). */
   totals: { earned: number; required: number; remaining: number; userProvided: number };

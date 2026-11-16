@@ -56,6 +56,8 @@ export function SideNav({ base, deptName, courseModes }: { base: string; deptNam
           </ul>
         </li>
         <li>{link(`${base}/calendar`, "Ακαδημαϊκό ημερολόγιο")}</li>
+        <li>{link(`${base}/internship`, "Πρακτική Άσκηση")}</li>
+        <li>{link(`${base}/faq`, "Συχνές ερωτήσεις")}</li>
       </ul>
     </nav>
   );

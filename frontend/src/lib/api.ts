@@ -8,6 +8,7 @@ import type {
   Department,
   DepartmentInfo,
   FacultyView,
+  QaPage,
   Requirements,
   University,
 } from "./types";
@@ -84,4 +85,6 @@ export const api = {
     orNotFound(get<FacultyView>(`${dept(uni, d)}/faculty/${encodeURIComponent(id)}`)),
   requirements: (uni: string, d: string) => orNotFound(get<Requirements>(`${dept(uni, d)}/requirements`)),
   calendar: (uni: string, d: string) => orNotFound(get<AcademicCalendar>(`${dept(uni, d)}/calendar`)),
+  faq: (uni: string, d: string) => orNotFound(get<QaPage>(`${dept(uni, d)}/faq`)),
+  internship: (uni: string, d: string) => orNotFound(get<QaPage>(`${dept(uni, d)}/internship`)),
 };

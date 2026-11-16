@@ -1,3 +1,4 @@
+import { ReportIssue } from "@/components/ReportIssue";
 import { SideNav } from "@/components/SideNav";
 import { api } from "@/lib/api";
 import { departmentBase, t } from "@/lib/labels";
@@ -26,7 +27,10 @@ export default async function DepartmentLayout({
     <div className="container">
       <div className="shell">
         <SideNav base={base} deptName={t(info.department.name)} courseModes={courseModes} />
-        <main id="main">{children}</main>
+        <main id="main">
+          {children}
+          <ReportIssue />
+        </main>
       </div>
     </div>
   );

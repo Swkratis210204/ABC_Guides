@@ -67,6 +67,29 @@ class DataValidatorTest {
     }
 
     @Test
+    void emptyQaPagesWhenFilesAreMissing(@TempDir Path dir) throws IOException {
+        DataLoader.TenantLoadResult r = loadCourses(dir, COURSES);
+        assertThat(r.errors()).isEmpty();
+        assertThat(r.snapshot().faq().sections()).isEmpty();
+        assertThat(r.snapshot().internship().sections()).isEmpty();
+    }
+
+    @Test
+    void rejectsBadQaPage(@TempDir Path dir) throws IOException {
+        Path d = write(dir, TENANT, COURSES, FACULTY, REQUIREMENTS, CALENDAR);
+        Files.writeString(d.resolve("faq.json"), """
+                {"schemaVersion":1,"sections":[{"id":"s1","title":{"el":"T"},"items":[
+                  {"id":"q1","question":{"el":"Q"},"answer":{"el":""}},
+                  {"id":"q1","question":{"el":"Q2"},"answer":{"el":"A"},"links":[{"label":"x","url":"javascript:alert(1)"}]}]}]}""",
+                StandardCharsets.UTF_8);
+        DataLoader.TenantLoadResult r = loader.loadTenant(new TenantKey("u", "d"), d);
+        assertThat(r.ok()).isFalse();
+        assertThat(r.errors()).anyMatch(e -> e.contains("faq.json item[q1]: answer is missing"))
+                .anyMatch(e -> e.contains("duplicate id"))
+                .anyMatch(e -> e.contains("https: or mailto:"));
+    }
+
+    @Test
     void validDataLoads(@TempDir Path dir) throws IOException {
         DataLoader.TenantLoadResult r = loadCourses(dir, COURSES);
         assertThat(r.errors()).isEmpty();

@@ -1,0 +1,34 @@
+name: Λάθος σε πληροφορία
+description: Βρήκατε λάθος ή παλιά πληροφορία στο site; Πείτε μας ποια.
+title: "[Λάθος] "
+labels: ["data-error"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ευχαριστούμε που βοηθάτε να είναι σωστές οι πληροφορίες! Μην συμπεριλάβετε προσωπικά σας στοιχεία (ΑΜ, τηλέφωνο, email).
+  - type: input
+    id: page
+    attributes:
+      label: Σελίδα
+      description: Η σελίδα του site όπου είδατε το λάθος (συμπληρώνεται αυτόματα από το κουμπί «Αναφορά λάθους»).
+      placeholder: /aueb/cs/courses/3335
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: Τι είναι λάθος;
+      description: Αντιγράψτε το κείμενο ή περιγράψτε τι δεν είναι σωστό.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Τι θα έπρεπε να λέει;
+      description: Αν το γνωρίζετε.
+  - type: textarea
+    id: source
+    attributes:
+      label: Πηγή
+      description: Π.χ. ο επίσημος Οδηγός Σπουδών, ανακοίνωση, ή η γραμματεία.

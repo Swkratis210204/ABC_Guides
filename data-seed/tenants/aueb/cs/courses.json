@@ -1771,9 +1771,264 @@
     "active": true
   },
   {
+    "code": "1193",
+    "name": {
+      "el": "Αρχές Κοινωνιολογίας"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
     "code": "1225",
     "name": {
       "el": "Οικονομική Ιστορία της Ελλάδος"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1311",
+    "name": {
+      "el": "Μακροοικονομική Θεωρία Ι"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1313",
+    "name": {
+      "el": "Μικροοικονομική Θεωρία Ι"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1321",
+    "name": {
+      "el": "Μαρξιστική Οικονομική Ι"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1373",
+    "name": {
+      "el": "Διεθνής Οικονομική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1385",
+    "name": {
+      "el": "Οικονομική Γεωγραφία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1402",
+    "name": {
+      "el": "Μικροοικονομική Θεωρία ΙΙ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1412",
+    "name": {
+      "el": "Μακροοικονομική Θεωρία ΙΙ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1508",
+    "name": {
+      "el": "Οικονομετρία Ι"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1531",
+    "name": {
+      "el": "Ιστορία Οικονομικής Σκέψης"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1562",
+    "name": {
+      "el": "Οικονομική της Εργασίας"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1566",
+    "name": {
+      "el": "Αγροτική Οικονομική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1603",
+    "name": {
+      "el": "Θεωρία Βιομηχανικής Οργάνωσης"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1609",
+    "name": {
+      "el": "Οικονομετρία ΙΙ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1612",
+    "name": {
+      "el": "Θεωρία Οικονομικής Πολιτικής"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1642",
+    "name": {
+      "el": "Νομισματική Θεωρία & Πολιτική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1651",
+    "name": {
+      "el": "Δημόσια Οικονομική ΙΙ"
     },
     "level": "FREE",
     "ects": null,
@@ -1801,6 +2056,111 @@
     "active": true
   },
   {
+    "code": "1742",
+    "name": {
+      "el": "Ανάλυση Χρηματαγορών και Κεφαλαιαγορών"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1745",
+    "name": {
+      "el": "Διεθνείς Νομισματικές Σχέσεις"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1764",
+    "name": {
+      "el": "Οικονομική του Περιβάλλοντος και των Φυσικών Πόρων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1808",
+    "name": {
+      "el": "Θέματα Δυναμικής Οικονομικής"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1852",
+    "name": {
+      "el": "Εφαρμοσμένη Βιομηχανική Οργάνωση"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1861",
+    "name": {
+      "el": "Θεωρία Οικονομικής Μεγέθυνσης"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1881",
+    "name": {
+      "el": "Περιφερειακή και Αστική Οικονομική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
     "code": "2117",
     "name": {
       "el": "Αστικό Δίκαιο Ι"
@@ -1816,9 +2176,24 @@
     "active": true
   },
   {
-    "code": "2317",
+    "code": "2410",
     "name": {
-      "el": "Μάνατζμεντ"
+      "el": "Προχωρημένη Χρηματοοικονομική Λογιστική ΙΙ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2537",
+    "name": {
+      "el": "Διαφήμιση και Προώθηση Πωλήσεων"
     },
     "level": "FREE",
     "ects": null,
@@ -1846,6 +2221,111 @@
     "active": true
   },
   {
+    "code": "2612",
+    "name": {
+      "el": "Λογιστική Κόστους"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2622",
+    "name": {
+      "el": "Διαχείριση Επενδύσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2632",
+    "name": {
+      "el": "Διοίκηση Επωνυμιών (Brand Management)"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2719",
+    "name": {
+      "el": "Ελεγκτική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2731",
+    "name": {
+      "el": "Διοικητική Λογιστική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2735",
+    "name": {
+      "el": "Στρατηγικός Σχεδιασμός Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2812",
+    "name": {
+      "el": "Θέματα Επιχειρησιακής Πολιτικής και Στρατηγικής"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
     "code": "2836",
     "name": {
       "el": "Στρατηγικό Ηλεκτρονικό Μάρκετινγκ"
@@ -1858,6 +2338,65 @@
     "prerequisitesText": null,
     "instructors": [],
     "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "3090",
+    "name": {
+      "el": "Ψηφιακό Εκπαιδευτικό Υλικό"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "4101",
+    "name": {
+      "el": "Μικροοικονομική Ι"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΟΣ",
+    "active": true
+  },
+  {
+    "code": "4110",
+    "name": {
+      "el": "Εισαγωγή στην Πολιτική & τις Διεθνείς Σχέσεις"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΟΣ",
+    "active": true
+  },
+  {
+    "code": "4116",
+    "name": {
+      "el": "Ευρωπαϊκό Δίκαιο"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΟΣ",
     "active": true
   },
   {
@@ -1876,9 +2415,99 @@
     "active": true
   },
   {
+    "code": "4128",
+    "name": {
+      "el": "Εξωτερικές Σχέσεις της Ε.Ε."
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΟΣ",
+    "active": true
+  },
+  {
+    "code": "4137",
+    "name": {
+      "el": "Διαχείριση Χαρτοφυλακίου"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΟΣ",
+    "active": true
+  },
+  {
+    "code": "4142",
+    "name": {
+      "el": "Διεθνείς Οργανισμοί"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΟΣ",
+    "active": true
+  },
+  {
+    "code": "5133",
+    "name": {
+      "el": "Λήψη Επιχειρηματικών Αποφάσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5412",
+    "name": {
+      "el": "Οργανωσιακή Συμπεριφορά"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
     "code": "5414",
     "name": {
       "el": "Διοίκηση Ανθρώπινου Δυναμικού"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5415",
+    "name": {
+      "el": "Διοίκηση Ποιότητας και Αλλαγών"
     },
     "level": "FREE",
     "ects": null,
@@ -1921,6 +2550,291 @@
     "active": true
   },
   {
+    "code": "5623",
+    "name": {
+      "el": "Συμπεριφορά Καταναλωτή"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5624",
+    "name": {
+      "el": "Πολιτική Προϊόντος"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5625",
+    "name": {
+      "el": "Διοίκηση Πωλήσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5626",
+    "name": {
+      "el": "Ψηφιακό Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5627",
+    "name": {
+      "el": "Βιομηχανικό (B2B) Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5634",
+    "name": {
+      "el": "Έρευνα Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5636",
+    "name": {
+      "el": "Διαφήμιση"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5637",
+    "name": {
+      "el": "Μάρκετινγκ Υπηρεσιών"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5638",
+    "name": {
+      "el": "Διεθνές Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5657",
+    "name": {
+      "el": "Μάρκετινγκ Λιανικού και Χονδρικού Εμπορίου"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5658",
+    "name": {
+      "el": "Τουριστικό Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5667",
+    "name": {
+      "el": "Σχεδιασμός και Ανάλυση Προωθητικών Ενεργειών"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5668",
+    "name": {
+      "el": "Μάρκετινγκ Αγροτικών Προϊόντων & Τροφίμων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5677",
+    "name": {
+      "el": "Σχεδιασμός Διαφημιστικών Μηνυμάτων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5678",
+    "name": {
+      "el": "Μάρκετινγκ Κοινωνικών Επιχειρήσεων και Μη Κερδ. Οργανισμών"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5688",
+    "name": {
+      "el": "Ποσοτικά Μοντέλα Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5689",
+    "name": {
+      "el": "Αναλυτική Διαδικτύου"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5691",
+    "name": {
+      "el": "Αναλυτική Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5718",
+    "name": {
+      "el": "Διαπολιτισμική Επικοινωνία και Διοίκηση Επιχειρήσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
     "code": "5721",
     "name": {
       "el": "Ψυχολογία"
@@ -1936,6 +2850,186 @@
     "active": true
   },
   {
+    "code": "5722",
+    "name": {
+      "el": "Εισαγωγή στην Επικοινωνία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5724",
+    "name": {
+      "el": "Ηλεκτρονική Επικοινωνία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5725",
+    "name": {
+      "el": "Δημόσιες Σχέσεις και Διαχείριση Κρίσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5728",
+    "name": {
+      "el": "Διαπραγματεύσεις"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5738",
+    "name": {
+      "el": "Εταιρική Επικοινωνιακή Στρατηγική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5781",
+    "name": {
+      "el": "Εταιρική Ηθική και Υπευθυνότητα"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5783",
+    "name": {
+      "el": "Συμβουλευτική των Επιχειρήσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5785",
+    "name": {
+      "el": "Διοίκηση Διεθνών Επιχειρήσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "6012",
+    "name": {
+      "el": "Εκτιμητική - Έλεγχοι Υποθέσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "6033",
+    "name": {
+      "el": "Δειγματοληψία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "6106",
+    "name": {
+      "el": "Στατιστική κατά Bayes"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "6113",
+    "name": {
+      "el": "Μη Παραμετρική Στατιστική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
     "code": "6115",
     "name": {
       "el": "Αριθμητικές Μέθοδοι στη Στατιστική"
@@ -1948,6 +3042,141 @@
     "prerequisitesText": null,
     "instructors": [],
     "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "6116",
+    "name": {
+      "el": "Θεωρία Πιθανοτήτων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "6133",
+    "name": {
+      "el": "Εισαγωγή στη Μαθηματική Ανάλυση"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "6135",
+    "name": {
+      "el": "Αναλογιστικά Ι"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "6163",
+    "name": {
+      "el": "Εισαγωγή στη Μηχανογραφημένη Λογιστική και Χρηματοοικονομική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΛΟΧΡΗ",
+    "active": true
+  },
+  {
+    "code": "6256",
+    "name": {
+      "el": "Εισ. στη Θεωρ. Μέτρου με Αναφ. στις Πιθαν. και τη Στατιστική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "7102",
+    "name": {
+      "el": "Αρχές Χρηματοοικονομικής Λογιστικής"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΛΟΧΡΗ",
+    "active": true
+  },
+  {
+    "code": "7108",
+    "name": {
+      "el": "Χρηματοοικονομική Ανάλυση και Αποτίμηση Επιχειρήσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΛΟΧΡΗ",
+    "active": true
+  },
+  {
+    "code": "7117",
+    "name": {
+      "el": "Διεθνή Λογιστικά Πρότυπα"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΛΟΧΡΗ",
+    "active": true
+  },
+  {
+    "code": "7127",
+    "name": {
+      "el": "Χρηματοοικονομικά της Ναυτιλίας"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΛΟΧΡΗ",
     "active": true
   },
   {
@@ -1981,9 +3210,114 @@
     "active": true
   },
   {
+    "code": "8125",
+    "name": {
+      "el": "Διοίκηση Επιχειρήσεων και Τεχνολογία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8126",
+    "name": {
+      "el": "Ανάλυση και Μοντελοποίηση Διαδικασιών και Συστημάτων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8127",
+    "name": {
+      "el": "Οργανωσιακή Ψυχολογία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8133",
+    "name": {
+      "el": "Ανάλυση και Σχεδιασμός Συστημάτων Διανομής και Μεταφορών"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
     "code": "8134",
     "name": {
       "el": "Διοίκηση Παραγωγής και Υπηρεσιών"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8137",
+    "name": {
+      "el": "Επιχειρηματική Ευφυία και Ανάλυση Μεγάλων Δεδομένων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8138",
+    "name": {
+      "el": "Τεχνολογία Λογισμικού στην Πράξη"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8146",
+    "name": {
+      "el": "Ηλεκτρονικό Εμπόριο και Εφαρμογές Διαδικτύου"
     },
     "level": "FREE",
     "ects": null,
@@ -2026,9 +3360,9 @@
     "active": true
   },
   {
-    "code": "8170",
+    "code": "8185",
     "name": {
-      "el": "Συστήματα Διαχείρισης Μεγάλων Δεδομένων"
+      "el": "Εφαρμοσμένη Μηχανική Μάθηση"
     },
     "level": "FREE",
     "ects": null,
@@ -2041,9 +3375,9 @@
     "active": true
   },
   {
-    "code": "8182",
+    "code": "8187",
     "name": {
-      "el": "Ηθική, Υπευθυνότητα και Διακυβέρνηση"
+      "el": "Ανάλυση Κοινωνικών Δικτύων"
     },
     "level": "FREE",
     "ects": null,
