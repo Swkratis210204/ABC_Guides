@@ -51,6 +51,7 @@ The same check runs on GitHub for every change (`.github/workflows/deploy.yml`).
 ## Documentation
 
 - [Roadmap](docs/roadmap.md): all planned steps and their status
+- [Schema map](docs/schema-map.md): a diagram of the files and how they refer to each other
 - [Scope](docs/scope.md): goals, rules and the content architecture
 - [Work log](docs/work/step-1.md): what has been done so far
 
