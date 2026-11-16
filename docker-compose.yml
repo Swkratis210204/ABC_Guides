@@ -1,0 +1,37 @@
+# Production in miniature: the same two images that get deployed, a persistent data volume, a private backend.
+#   docker compose up --build            then open http://localhost:3000
+# To edit the data files live while testing, add the dev overlay:
+#   docker compose -f docker-compose.yml -f docker-compose.dev.yml up --build
+name: deptinfo
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      # Enables POST /api/admin/reload. Leave empty to switch admin endpoints off.
+      ADMIN_API_KEY: ${ADMIN_API_KEY:-}
+    volumes:
+      # /data is seeded from the image on first start (see SEED_DIR in the Dockerfile) and then persists.
+      - deptinfo-data:/data
+    mem_limit: 512m
+    ports:
+      # Local debugging only (bound to this machine). In production the backend has no public port.
+      - "127.0.0.1:8080:8080"
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    environment:
+      BACKEND_URL: http://backend:8080
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+    mem_limit: 512m
+    restart: unless-stopped
+
+volumes:
+  deptinfo-data:

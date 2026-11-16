@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1040" viewBox="0 0 1700 1040" font-family="'Segoe UI', Arial, sans-serif">
+  <title>Department Information System: architecture</title>
+  <desc>How the data, the code, Docker and Fly.io fit together. Solid boxes are built and running; dashed boxes are planned (Phase 2).</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3b4350"/>
+    </marker>
+    <marker id="arrP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7a5bd1"/>
+    </marker>
+    <style>
+      .panel   { rx: 16; stroke-width: 2; }
+      .box     { rx: 10; stroke-width: 2; }
+      .data    { fill: #fff3d1; stroke: #cf9f2e; }
+      .app     { fill: #e4efff; stroke: #2f6fd6; }
+      .infra   { fill: #eef1f4; stroke: #7d8895; }
+      .ext     { fill: #efe8ff; stroke: #7a5bd1; }
+      .plan    { stroke-dasharray: 9 6; }
+      .title   { font-size: 21px; font-weight: 700; fill: #1c2430; }
+      .h       { font-size: 16.5px; font-weight: 700; fill: #1c2430; }
+      .t       { font-size: 14.5px; fill: #2b3441; }
+      .s       { font-size: 13px; fill: #566170; }
+      .lbl     { font-size: 13.5px; fill: #3b4350; font-weight: 600; }
+      .arrow   { stroke: #3b4350; stroke-width: 2.6; fill: none; marker-end: url(#arr); }
+      .darrow  { stroke: #7a5bd1; stroke-width: 2.4; fill: none; stroke-dasharray: 8 6; marker-end: url(#arrP); }
+      .line    { stroke: #3b4350; stroke-width: 2.6; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="1700" height="1040" fill="#ffffff"/>
+  <text x="40" y="50" class="title" style="font-size:30px">Department Information System: how it fits together</text>
+  <text x="40" y="80" class="s" style="font-size:16px">AUEB Computer Science · live at https://deptinfo-aueb-web.fly.dev · Phase 1 built and running, Phase 2 planned</text>
+
+  <!-- ============ PANEL A: DATA ============ -->
+  <rect class="panel" x="30" y="110" width="390" height="900" fill="#fffaf0" stroke="#e2c98a"/>
+  <text x="52" y="144" class="title">1  The data (offline)</text>
+
+  <rect class="box data" x="52" y="165" width="168" height="84"/>
+  <text x="66" y="192" class="h">Study guide</text>
+  <text x="66" y="212" class="t">PDF, 16 pages</text>
+  <text x="66" y="231" class="s">official text and tables</text>
+  <rect class="box data" x="232" y="165" width="168" height="84"/>
+  <text x="246" y="192" class="h">Spreadsheet</text>
+  <text x="246" y="212" class="t">Excel, 7 sheets</text>
+  <text x="246" y="231" class="s">the department's own file</text>
+
+  <path class="line" d="M136,249 V292 H316 V249" style="stroke-width:0"/>
+  <path class="line" d="M136,249 V285 H226"/>
+  <path class="line" d="M316,249 V285 H226"/>
+  <path class="arrow" d="M226,285 V332"/>
+  <text x="238" y="312" class="lbl">transcribed,</text>
+  <text x="238" y="328" class="lbl" style="font-size:12.5px">cross-checked by scripts</text>
+
+  <rect class="box data" x="52" y="335" width="348" height="262"/>
+  <text x="68" y="364" class="h">JSON data files</text>
+  <text x="68" y="388" class="t">tenant.json         levels, cycles, sectors, contacts</text>
+  <text x="68" y="410" class="t">courses.json        88 courses</text>
+  <text x="68" y="432" class="t">faculty.json         34 people</text>
+  <text x="68" y="454" class="t">requirements.json graduation rules</text>
+  <text x="68" y="476" class="t">calendar.json       terms, exams, holidays</text>
+  <line x1="68" y1="494" x2="384" y2="494" stroke="#cf9f2e" stroke-width="1.5"/>
+  <text x="68" y="520" class="t" style="font-weight:600">One folder per department</text>
+  <text x="68" y="542" class="s">university / department /  five files</text>
+  <text x="68" y="566" class="s">Adding a department means adding a folder:</text>
+  <text x="68" y="584" class="s">no code changes.</text>
+
+  <rect class="box data" x="52" y="620" width="348" height="92"/>
+  <text x="68" y="648" class="h">DATA-NOTES.md</text>
+  <text x="68" y="670" class="t">Every place the two sources disagree,</text>
+  <text x="68" y="690" class="t">and the decision the owner took.</text>
+
+  <!-- legend -->
+  <rect class="box" x="52" y="742" width="348" height="246" fill="#ffffff" stroke="#c9ced6"/>
+  <text x="68" y="770" class="h">How to read this picture</text>
+  <rect class="box data" x="68" y="788" width="30" height="20" style="rx:4"/><text x="108" y="804" class="t">data</text>
+  <rect class="box app" x="178" y="788" width="30" height="20" style="rx:4"/><text x="218" y="804" class="t">our code</text>
+  <rect class="box infra" x="68" y="818" width="30" height="20" style="rx:4"/><text x="108" y="834" class="t">infrastructure</text>
+  <rect class="box ext" x="248" y="818" width="30" height="20" style="rx:4"/><text x="288" y="834" class="t">outside service</text>
+  <rect class="box app plan" x="68" y="848" width="30" height="20" style="rx:4"/><text x="108" y="864" class="t">dashed = planned (Phase 2), not built yet</text>
+  <line x1="68" y1="888" x2="384" y2="888" stroke="#c9ced6"/>
+  <text x="68" y="912" class="t">Solid arrow: data or requests flowing.</text>
+  <text x="68" y="934" class="t">Dashed purple arrow: planned connection.</text>
+  <text x="68" y="962" class="s">Measured: API starts in about 4 s, uses about 110 MB;</text>
+  <text x="68" y="980" class="s">website uses about 50 MB. Both fit in 512 MB.</text>
+
+  <!-- ============ PANEL B: DEVELOPMENT ============ -->
+  <rect class="panel" x="450" y="110" width="480" height="540" fill="#f7f8fa" stroke="#c9ced6"/>
+  <text x="472" y="144" class="title">2  Development (a laptop)</text>
+
+  <rect class="box app" x="470" y="160" width="440" height="112"/>
+  <text x="486" y="188" class="h">Source code</text>
+  <text x="486" y="212" class="t">API: Java 21 + Spring Boot 3 (built with Maven)</text>
+  <text x="486" y="234" class="t">Website: TypeScript + Next.js 15 + React 19</text>
+  <text x="486" y="256" class="s">All text on the site is in Greek; data is bilingual-ready</text>
+
+  <path class="arrow" d="M690,272 V300"/>
+  <rect class="box infra" x="470" y="300" width="440" height="88"/>
+  <text x="486" y="328" class="h">Tests, before every release</text>
+  <text x="486" y="351" class="t">69 automated unit and API tests (JUnit)</text>
+  <text x="486" y="372" class="t">61-step test in a real browser (Edge)</text>
+
+  <path class="arrow" d="M690,388 V416"/>
+  <rect class="box infra" x="470" y="416" width="440" height="218"/>
+  <text x="486" y="444" class="h">Docker Desktop:  docker compose up</text>
+  <rect class="box app" x="490" y="460" width="190" height="72"/>
+  <text x="504" y="487" class="h">website</text>
+  <text x="504" y="508" class="s">container · port 3000</text>
+  <rect class="box app" x="700" y="460" width="190" height="72"/>
+  <text x="714" y="487" class="h">API</text>
+  <text x="714" y="508" class="s">container · port 8080</text>
+  <path class="arrow" d="M680,496 H700"/>
+  <!-- local volume -->
+  <path d="M700,562 a95,9 0 0 1 190,0 v34 a95,9 0 0 1 -190,0 z" class="data" style="stroke-width:2"/>
+  <ellipse cx="795" cy="562" rx="95" ry="9" class="data" style="stroke-width:2"/>
+  <text x="735" y="585" class="s" style="font-size:13.5px">volume /data</text>
+  <path class="arrow" d="M795,532 V553"/>
+  <text x="490" y="560" class="t">data baked into API image</text>
+  <text x="490" y="580" class="t">same images go to Fly</text>
+  <text x="490" y="606" class="s">http://localhost:3000</text>
+
+  <!-- data into the image -->
+  <path class="arrow" d="M400,496 H470"/>
+
+  <!-- ============ PANEL D: PHASE 2 ============ -->
+  <rect class="panel plan" x="450" y="672" width="480" height="338" fill="#fbfaff" stroke="#7a5bd1"/>
+  <text x="472" y="706" class="title">4  Planned: Phase 2</text>
+  <rect class="box app plan" x="470" y="722" width="440" height="72"/>
+  <text x="486" y="750" class="h">Fuzzy search (Apache Lucene, inside the API)</text>
+  <text x="486" y="773" class="t">finds courses despite typos, accents, Greek endings</text>
+  <rect class="box app plan" x="470" y="806" width="440" height="72"/>
+  <text x="486" y="834" class="h">Chatbot (LangChain4j, RAG)</text>
+  <text x="486" y="857" class="t">answers from the department's own data, with sources</text>
+  <rect class="box ext plan" x="470" y="892" width="210" height="96"/>
+  <text x="484" y="920" class="h">HuggingFace API</text>
+  <text x="484" y="942" class="t">embeddings of the data</text>
+  <text x="484" y="962" class="s">multilingual-e5-small</text>
+  <rect class="box ext plan" x="700" y="892" width="210" height="96"/>
+  <text x="714" y="920" class="h">Groq API</text>
+  <text x="714" y="942" class="t">the language model</text>
+  <text x="714" y="962" class="s">streams the answer</text>
+
+  <!-- ============ PANEL C: PRODUCTION ============ -->
+  <rect class="panel" x="1040" y="110" width="620" height="900" fill="#f3f8ff" stroke="#9db9e8"/>
+  <text x="1062" y="144" class="title">3  Production: Fly.io, Frankfurt</text>
+
+  <rect class="box infra" x="1240" y="160" width="220" height="52"/>
+  <text x="1350" y="192" class="h" text-anchor="middle">Users' browsers</text>
+  <path class="arrow" d="M1350,212 V248"/>
+  <text x="1374" y="236" class="lbl">HTTPS</text>
+  <rect class="box infra" x="1190" y="248" width="320" height="52"/>
+  <text x="1350" y="271" class="h" text-anchor="middle">Fly edge</text>
+  <text x="1350" y="290" class="s" text-anchor="middle">TLS certificate, http redirects to https</text>
+  <path class="arrow" d="M1350,300 V338"/>
+
+  <rect class="box app" x="1060" y="338" width="580" height="196"/>
+  <text x="1078" y="366" class="h" style="font-size:17.5px">Website app  (deptinfo-aueb-web)</text>
+  <text x="1078" y="386" class="s">Next.js container · 512 MB · sleeps when idle, wakes on a visit</text>
+  <rect class="box" x="1078" y="400" width="262" height="62" fill="#ffffff" stroke="#2f6fd6" style="stroke-width:1.5"/>
+  <text x="1092" y="425" class="h">Pages</text>
+  <text x="1092" y="446" class="s">built on the server, fast to open</text>
+  <rect class="box" x="1360" y="400" width="262" height="62" fill="#ffffff" stroke="#2f6fd6" style="stroke-width:1.5"/>
+  <text x="1374" y="425" class="h">/api proxy</text>
+  <text x="1374" y="446" class="s">GET + POST only; /api/admin blocked</text>
+  <rect class="box" x="1078" y="472" width="544" height="48" fill="#ffffff" stroke="#2f6fd6" style="stroke-width:1.5"/>
+  <text x="1092" y="494" class="h">Runs in the visitor's browser</text>
+  <text x="1092" y="512" class="s">ECTS calculator (updates live), saved choices (localStorage)</text>
+
+  <path class="arrow" d="M1350,534 V602"/>
+  <text x="1368" y="556" class="lbl">private network (IPv6)</text>
+  <text x="1368" y="572" class="s">http://deptinfo-aueb-api.internal:8080</text>
+  <text x="1368" y="588" class="s">the API has no public address</text>
+
+  <rect class="box app" x="1060" y="602" width="580" height="212"/>
+  <text x="1078" y="630" class="h" style="font-size:17.5px">API app  (deptinfo-aueb-api)</text>
+  <text x="1078" y="650" class="s">Spring Boot container · 512 MB · always on · runs as a non-root user</text>
+  <rect class="box infra" x="1478" y="618" width="150" height="26" style="rx:13;stroke-width:1.5"/>
+  <text x="1553" y="636" class="s" text-anchor="middle" style="font-size:12px">secret: ADMIN_API_KEY</text>
+  <rect class="box" x="1078" y="664" width="262" height="60" fill="#ffffff" stroke="#2f6fd6" style="stroke-width:1.5"/>
+  <text x="1092" y="689" class="h">Loader + validator</text>
+  <text x="1092" y="709" class="s">checks every link; all or nothing</text>
+  <rect class="box" x="1360" y="664" width="262" height="60" fill="#ffffff" stroke="#2f6fd6" style="stroke-width:1.5"/>
+  <text x="1374" y="689" class="h">Data held in memory</text>
+  <text x="1374" y="709" class="s">one consistent snapshot</text>
+  <rect class="box" x="1078" y="738" width="262" height="60" fill="#ffffff" stroke="#2f6fd6" style="stroke-width:1.5"/>
+  <text x="1092" y="763" class="h">Read-only REST endpoints</text>
+  <text x="1092" y="783" class="s">courses, faculty, rules, calendar</text>
+  <rect class="box" x="1360" y="738" width="262" height="60" fill="#ffffff" stroke="#2f6fd6" style="stroke-width:1.5"/>
+  <text x="1374" y="763" class="h">ECTS calculator</text>
+  <text x="1374" y="783" class="s">cycles solved as a matching problem</text>
+
+  <path class="arrow" d="M1350,814 V862"/>
+  <text x="1364" y="842" class="lbl">reads at start and on reload</text>
+
+  <path d="M1190,884 a160,13 0 0 1 320,0 v62 a160,13 0 0 1 -320,0 z" class="data" style="stroke-width:2"/>
+  <ellipse cx="1350" cy="884" rx="160" ry="13" class="data" style="stroke-width:2"/>
+  <text x="1350" y="919" class="h" text-anchor="middle">Volume /data  (1 GB)</text>
+  <text x="1350" y="940" class="s" text-anchor="middle">tenants/aueb/cs/*.json · survives restarts</text>
+
+  <rect class="box infra" x="1060" y="862" width="118" height="82"/>
+  <text x="1119" y="890" class="h" text-anchor="middle">You (admin)</text>
+  <text x="1119" y="910" class="s" text-anchor="middle">fly ssh</text>
+  <text x="1119" y="928" class="s" text-anchor="middle">+ secret key</text>
+  <path class="arrow" d="M1119,862 V814" style="stroke-dasharray:7 5"/>
+  <text x="1062" y="972" class="s">Admin reload: POST /api/admin/reload with X-Admin-Key</text>
+  <text x="1062" y="990" class="s">(reachable only from inside Fly: the public site cannot call it)</text>
+
+  <!-- ============ CROSS-PANEL ARROWS ============ -->
+  <!-- deploy: Docker images -> both Fly apps -->
+  <!-- the images leave Docker, pass through the deploy script, and reach each Fly app as a whole -->
+  <path class="line" d="M910,527 H985" style="stroke-width:3.4"/>
+  <path class="arrow" d="M985,527 V366 H1060" style="stroke-width:3.4"/>
+  <path class="arrow" d="M985,527 V640 H1060" style="stroke-width:3.4"/>
+  <rect class="box" x="929" y="500" width="112" height="54" fill="#ffffff" stroke="#3b4350" style="stroke-width:1.8"/>
+  <text x="985" y="523" class="h" text-anchor="middle" style="font-size:15.5px">deploy.ps1</text>
+  <text x="985" y="543" class="s" text-anchor="middle" style="font-size:12px">build, push, check</text>
+
+  <!-- phase 2 to API -->
+  <path class="darrow" d="M930,830 H1010 V770 H1060"/>
+
+  <!-- footer -->
+  <text x="40" y="1030" class="s">Docs: README.md (run it) · DESIGN.md (design) · DEPLOY.md (deploying) · DATA-NOTES.md (data decisions)</text>
+</svg>

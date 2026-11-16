@@ -1,0 +1,31 @@
+# Fly.io config for the backend (the API). PREPARED, NOT YET USED: see DEPLOY.md for the steps and what to verify.
+# The app name must be unique across all of Fly.io; change it if `fly apps create` says it is taken.
+app = "deptinfo-aueb-api"
+primary_region = "fra"   # nearest region to Greece; the data volume lives in this one region
+
+[env]
+  # Fly's private network is IPv6-only. Listen on "::" so the frontend can reach this app over it.
+  # (DATA_DIR and SEED_DIR are already set inside the image.)
+  SERVER_ADDRESS = "::"
+
+# No [http_service]: this app has no public address. Only the frontend app, on the same private network,
+# can call it at http://deptinfo-aueb-api.internal:8080 .
+
+[[mounts]]
+  source = "deptinfo_data"
+  destination = "/data"
+  initial_size = "1gb"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
+
+[checks]
+  [checks.health]
+    type = "http"
+    port = 8080
+    path = "/actuator/health"
+    method = "GET"
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "45s"

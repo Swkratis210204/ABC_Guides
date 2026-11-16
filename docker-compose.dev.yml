@@ -1,0 +1,7 @@
+# Overlay for editing data while testing: mounts the repository's data-seed folder as /data instead of the
+# persistent volume. Edit a JSON file, then reload without restarting:
+#   curl -X POST -H "X-Admin-Key: <your key>" http://localhost:8080/api/admin/reload
+services:
+  backend:
+    volumes:
+      - ./data-seed:/data

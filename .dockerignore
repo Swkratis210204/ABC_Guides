@@ -1,0 +1,14 @@
+# The backend image is built from the repository root; keep everything it does not need out of the build context.
+frontend
+docs
+tools
+deploy
+backend/target
+**/node_modules
+**/.next
+*.pdf
+*.xlsx
+*.md
+data-seed/**/*.md
+.env
+.git

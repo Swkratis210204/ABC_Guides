@@ -1,0 +1,2058 @@
+[
+  {
+    "code": "3117",
+    "name": {
+      "el": "Διακριτά Μαθηματικά"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      1
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Αμανατίδης Γεώργιος",
+        "facultyId": "amanatidis-georgios"
+      }
+    ],
+    "description": {
+      "el": "Σύνολα, σχέσεις, συναρτήσεις, επαγωγή, Άλγεβρα Boole, τεχνικές απόδειξης, συνδυαστική, γραφήματα, δέντρα."
+    },
+    "aliases": [
+      "Διακριτά Μαθ."
+    ],
+    "active": true
+  },
+  {
+    "code": "3135",
+    "name": {
+      "el": "Εισαγωγή στην Επιστήμη των Υπολογιστών"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      1
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Κουτσιμπέλα Αγγελική",
+        "facultyId": "koutsimpela-aggeliki"
+      }
+    ],
+    "description": {
+      "el": "Αλγόριθμοι, αρχιτεκτονική Η/Υ, λειτουργικά συστήματα, βάσεις δεδομένων, δίκτυα — πανοραμική θεώρηση ολόκληρης της επιστήμης."
+    },
+    "aliases": [
+      "ΕΕΥ"
+    ],
+    "active": true
+  },
+  {
+    "code": "3151",
+    "name": {
+      "el": "Εισαγωγή στην Οικονομική Επιστήμη"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      1
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Δρ. Γιαννουλάκης Στυλιανός",
+        "facultyId": null
+      }
+    ],
+    "description": {
+      "el": "Μικροοικονομία, μακροοικονομία, μορφές αγοράς, μακροοικονομικά μεγέθη Ελλάδας/ΕΕ."
+    },
+    "active": true
+  },
+  {
+    "code": "3125",
+    "name": {
+      "el": "Εισαγωγή στον Προγραμματισμό Υπολογιστών (Python)"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      1
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Δημάκης Αντώνιος",
+        "facultyId": "dimakis-antonios"
+      }
+    ],
+    "description": {
+      "el": "Θεμελιώδεις έννοιες προγραμματισμού, αλγόριθμοι, αναδρομή, βασικές δομές δεδομένων, Python OOP."
+    },
+    "aliases": [
+      "Python"
+    ],
+    "active": true
+  },
+  {
+    "code": "3119",
+    "name": {
+      "el": "Μαθηματικά Ι"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      1
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Τουμπής Σταύρος",
+        "facultyId": "toumpis-stayros"
+      }
+    ],
+    "description": {
+      "el": "Λογισμός μιας μεταβλητής, ολοκληρώματα, διαφορικές εξισώσεις, σειρές Taylor, αναλυτική γεωμετρία."
+    },
+    "aliases": [
+      "Μαθ. Ι"
+    ],
+    "active": true
+  },
+  {
+    "code": "3254",
+    "name": {
+      "el": "Εισαγωγή στη Διοίκηση Επιχειρήσεων"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      2
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Δρ. Κώτσιος Παναγιώτης",
+        "facultyId": null
+      }
+    ],
+    "description": {
+      "el": "Βασικές αρχές management, λειτουργίες επιχείρησης, στρατηγική, εισαγωγή σε λογιστικές καταστάσεις."
+    },
+    "active": true
+  },
+  {
+    "code": "3214",
+    "name": {
+      "el": "Μαθηματικά ΙΙ"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      2
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "description": {
+      "el": "Γραμμική Άλγεβρα (πίνακες, ιδιοτιμές, διαγωνοποίηση) και Λογισμός πολλών μεταβλητών, πολλαπλασιαστές Lagrange."
+    },
+    "aliases": [
+      "Μαθ. ΙΙ"
+    ],
+    "active": true
+  },
+  {
+    "code": "3311",
+    "name": {
+      "el": "Πιθανότητες"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      2
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Τουμπής Σταύρος",
+        "facultyId": "toumpis-stayros"
+      }
+    ],
+    "description": {
+      "el": "Θεωρία πιθανοτήτων, τυχαίες μεταβλητές, κατανομές, Νόμος Μεγάλων Αριθμών, Κεντρικό Οριακό Θεώρημα."
+    },
+    "active": true
+  },
+  {
+    "code": "3222",
+    "name": {
+      "el": "Προγραμματισμός Υπολογιστών με Java"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      2
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Παυλόπουλος Ιωάννης",
+        "facultyId": "paylopoulos-ioannis"
+      }
+    ],
+    "description": {
+      "el": "Αντικειμενοστρεφής προγραμματισμός, κληρονομικότητα, πολυμορφισμός, δομές δεδομένων Java, εξαιρέσεις."
+    },
+    "aliases": [
+      "Java"
+    ],
+    "active": true
+  },
+  {
+    "code": "3262",
+    "name": {
+      "el": "Σχεδίαση Ψηφιακών Συστημάτων"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 6,
+    "semesters": [
+      2
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Κεφάλα Άννα",
+        "facultyId": "kefala-anna"
+      }
+    ],
+    "description": {
+      "el": "Άλγεβρα Boole, λογικά κυκλώματα, VHDL, σύγχρονα ακολουθιακά κυκλώματα, Quartus Prime."
+    },
+    "active": true
+  },
+  {
+    "code": "3335",
+    "name": {
+      "el": "Δομές Δεδομένων"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 7,
+    "semesters": [
+      3
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3125",
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "Python ή Java",
+    "instructors": [
+      {
+        "name": "Σγουρίτσα Αλκμήνη",
+        "facultyId": "sgouritsa-alkmini"
+      }
+    ],
+    "description": {
+      "el": "Αναζήτηση, ταξινόμηση, AVL/B δέντρα, πίνακες κατακερματισμού, ουρές προτεραιότητας."
+    },
+    "aliases": [
+      "ΔΔ"
+    ],
+    "active": true
+  },
+  {
+    "code": "3365",
+    "name": {
+      "el": "Οργάνωση Συστημάτων Υπολογιστών"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 7,
+    "semesters": [
+      3
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3135",
+        "3262"
+      ]
+    ],
+    "prerequisitesText": "ΕΕΥ ή Σχεδίαση Ψηφ. Συστ.",
+    "instructors": [
+      {
+        "name": "Ξυλωμένος Γεώργιος",
+        "facultyId": "xylomenos-georgios"
+      }
+    ],
+    "description": {
+      "el": "Αρχιτεκτονική MIPS32, διοχέτευση, ιεραρχία μνήμης, κρυφή μνήμη."
+    },
+    "aliases": [
+      "ΟΣΥ"
+    ],
+    "active": true
+  },
+  {
+    "code": "3321",
+    "name": {
+      "el": "Προγραμματισμός Υπολογιστών με C++"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 8,
+    "semesters": [
+      3
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3125",
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "Python ή Java",
+    "instructors": [],
+    "description": {
+      "el": "Δείκτες, αναφορές, templates, STL, πολυμορφισμός, επαναλήπτες."
+    },
+    "aliases": [
+      "C++"
+    ],
+    "active": true
+  },
+  {
+    "code": "3230",
+    "name": {
+      "el": "Υπολογιστικά Μαθηματικά"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 8,
+    "semesters": [
+      3
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3119",
+        "3125"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. Ι ή Python",
+    "instructors": [
+      {
+        "name": "Βασσάλος Παρασκευάς",
+        "facultyId": "vassalos-paraskeyas"
+      }
+    ],
+    "description": {
+      "el": "Αριθμητικές μέθοδοι, παρεμβολή, επίλυση γραμμικών συστημάτων, Python/NumPy/SciPy."
+    },
+    "active": true
+  },
+  {
+    "code": "3432",
+    "name": {
+      "el": "Αλγόριθμοι"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 7,
+    "semesters": [
+      4
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3125",
+        "3222",
+        "3117"
+      ]
+    ],
+    "prerequisitesText": "Python/Java/Διακριτά Μαθ.",
+    "instructors": [
+      {
+        "name": "Μαρκάκης Ευάγγελος",
+        "facultyId": "markakis-eyaggelos"
+      }
+    ],
+    "description": {
+      "el": "Διαίρει & βασίλευε, άπληστοι, δυναμικός προγραμματισμός, γράφοι, NP-πληρότητα."
+    },
+    "active": true
+  },
+  {
+    "code": "3434",
+    "name": {
+      "el": "Θεωρία Υπολογισμού"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 7,
+    "semesters": [
+      4
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3117"
+      ]
+    ],
+    "prerequisitesText": "Διακριτά Μαθηματικά",
+    "instructors": [
+      {
+        "name": "Αμανατίδης Γεώργιος",
+        "facultyId": "amanatidis-georgios"
+      }
+    ],
+    "description": {
+      "el": "Αυτόματα, Turing μηχανές, επιλυσιμότητα, κλάσεις P/NP."
+    },
+    "aliases": [
+      "Θεωρία Υπολογ."
+    ],
+    "active": true
+  },
+  {
+    "code": "3436",
+    "name": {
+      "el": "Βάσεις Δεδομένων"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 8,
+    "semesters": [
+      4
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3125",
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "Python ή Java",
+    "instructors": [
+      {
+        "name": "Δρ. Μαϊλής Θεόφιλος",
+        "facultyId": null
+      }
+    ],
+    "description": {
+      "el": "Σχεσιακό μοντέλο, SQL, κανονικοποίηση, συναλλαγές, βελτιστοποίηση ερωτημάτων."
+    },
+    "aliases": [
+      "ΒΔ"
+    ],
+    "active": true
+  },
+  {
+    "code": "3464",
+    "name": {
+      "el": "Λειτουργικά Συστήματα"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 8,
+    "semesters": [
+      4
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3125",
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "Python ή Java",
+    "instructors": [
+      {
+        "name": "Βούλγαρης Σπυρίδων",
+        "facultyId": "voulgaris-spyridon"
+      }
+    ],
+    "description": {
+      "el": "Διεργασίες, νήματα, εικονική μνήμη, συστήματα αρχείων, ασφάλεια ΛΣ, POSIX/Linux."
+    },
+    "aliases": [
+      "ΛΣ"
+    ],
+    "active": true
+  },
+  {
+    "code": "3648",
+    "name": {
+      "el": "Τεχνολογία Λογισμικού"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 8,
+    "semesters": [
+      5
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3335",
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "ΔΔ ή Java",
+    "instructors": [],
+    "description": {
+      "el": "Agile, UML, αρχιτεκτονική λογισμικού, design patterns, CI/CD."
+    },
+    "aliases": [
+      "ΤΛ",
+      "Τεχν. Λογ."
+    ],
+    "active": true
+  },
+  {
+    "code": "3571",
+    "name": {
+      "el": "Δίκτυα Επικοινωνιών"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 8,
+    "semesters": [
+      5
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3365",
+        "3464"
+      ]
+    ],
+    "prerequisitesText": "ΟΣΥ ή ΛΣ",
+    "instructors": [
+      {
+        "name": "Κουτσόπουλος Ιορδάνης",
+        "facultyId": "koutsopoulos-iordanis"
+      }
+    ],
+    "description": {
+      "el": "Φυσικό επίπεδο, Ethernet/WiFi, TCP/IP, δρομολόγηση (Dijkstra, BGP/OSPF), εισαγωγή στο κβαντικό internet."
+    },
+    "aliases": [
+      "Δίκτυα Επικ."
+    ],
+    "active": true
+  },
+  {
+    "code": "3531",
+    "name": {
+      "el": "Τεχνητή Νοημοσύνη"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 8,
+    "semesters": [
+      5
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3214",
+        "3432"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. ΙΙ ή Αλγόριθμοι",
+    "instructors": [
+      {
+        "name": "Ανδρουτσόπουλος Ίων",
+        "facultyId": "androutsopoulos-ion"
+      }
+    ],
+    "description": {
+      "el": "Αναζήτηση, παράσταση γνώσεων, ML (k-NN, Bayes, δέντρα, Random Forests), Νευρωνικά δίκτυα, Transformers, LLMs, ηθικά ζητήματα ΤΝ."
+    },
+    "aliases": [
+      "ΤΝ"
+    ],
+    "active": true
+  },
+  {
+    "code": "3664",
+    "name": {
+      "el": "Κατανεμημένα Συστήματα"
+    },
+    "level": "CORE_MANDATORY",
+    "ects": 8,
+    "semesters": [
+      6
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3222"
+      ],
+      [
+        "3464"
+      ]
+    ],
+    "prerequisitesText": "Java, ΛΣ",
+    "instructors": [],
+    "description": {
+      "el": "Κατανεμημένα συστήματα, συγχρονισμός, ανοχή σφαλμάτων, cloud computing."
+    },
+    "active": true
+  },
+  {
+    "code": "3515",
+    "name": {
+      "el": "Λογική"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      5
+    ],
+    "cycles": [
+      "theoretical-cs",
+      "data-knowledge-mgmt"
+    ],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [
+      {
+        "name": "Φουστούκου Ευγενία",
+        "facultyId": "foustoukou-eygenia"
+      }
+    ],
+    "description": {
+      "el": "Τυπικά λογικά συστήματα, προτασιακή & κατηγορηματική λογική, αποδείξεις, Prolog."
+    },
+    "active": true
+  },
+  {
+    "code": "3155",
+    "name": {
+      "el": "Στατιστική στην Πληροφορική"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      5
+    ],
+    "cycles": [
+      "data-science-ml",
+      "applied-math"
+    ],
+    "prerequisites": [
+      [
+        "3311"
+      ],
+      [
+        "3214"
+      ]
+    ],
+    "prerequisitesText": "Πιθανότητες, Μαθ. ΙΙ",
+    "instructors": [
+      {
+        "name": "Δημάκης Αντώνιος",
+        "facultyId": "dimakis-antonios"
+      }
+    ],
+    "description": {
+      "el": "Διαστήματα εμπιστοσύνης, έλεγχοι υπόθεσης, παλινδρόμηση, ανάλυση δεδομένων με R."
+    },
+    "active": true
+  },
+  {
+    "code": "3541",
+    "name": {
+      "el": "Ανάλυση και Σχεδίαση Πληροφοριακών Συστημάτων"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      6
+    ],
+    "cycles": [
+      "software-systems",
+      "data-knowledge-mgmt"
+    ],
+    "prerequisites": [
+      [
+        "3125"
+      ],
+      [
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "Python, Java",
+    "instructors": [],
+    "description": {
+      "el": "Ανάλυση απαιτήσεων, UML, αρχιτεκτονικά πρότυπα, ανάπτυξη web εφαρμογών."
+    },
+    "active": true
+  },
+  {
+    "code": "3513",
+    "name": {
+      "el": "Αριθμητική Γραμμική Άλγεβρα"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      6
+    ],
+    "cycles": [
+      "data-science-ml",
+      "applied-math"
+    ],
+    "prerequisites": [
+      [
+        "3214"
+      ],
+      [
+        "3230"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. ΙΙ, Υπολ. Μαθ.",
+    "instructors": [],
+    "description": {
+      "el": "Άμεσες & επαναληπτικές μέθοδοι, SVD, QR, εφαρμογές ML."
+    },
+    "active": true
+  },
+  {
+    "code": "3662",
+    "name": {
+      "el": "Κυβερνοασφάλεια"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      6
+    ],
+    "cycles": [
+      "cybersecurity"
+    ],
+    "prerequisites": [
+      [
+        "3464"
+      ],
+      [
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "ΛΣ, Java",
+    "instructors": [],
+    "description": {
+      "el": "Κρυπτογραφία, επιθέσεις & άμυνα, penetration testing, ασφάλεια ΛΣ."
+    },
+    "active": true
+  },
+  {
+    "code": "3672",
+    "name": {
+      "el": "Δίκτυα Υπολογιστών"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      6
+    ],
+    "cycles": [
+      "systems-networks",
+      "software-systems",
+      "cybersecurity"
+    ],
+    "prerequisites": [
+      [
+        "3135"
+      ],
+      [
+        "3464"
+      ]
+    ],
+    "prerequisitesText": "ΕΕΥ, ΛΣ",
+    "instructors": [],
+    "description": {
+      "el": "Πρωτόκολλα εφαρμογής, P2P, SDN, ασφάλεια δικτύων σε βάθος."
+    },
+    "active": true
+  },
+  {
+    "code": "3642",
+    "name": {
+      "el": "Επαλήθευση, Επικύρωση και Συντήρηση Λογισμικού"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      6
+    ],
+    "cycles": [
+      "software-systems",
+      "cybersecurity"
+    ],
+    "prerequisites": [
+      [
+        "3125"
+      ],
+      [
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "Python, Java",
+    "instructors": [],
+    "description": {
+      "el": "Unit testing, model checking, formal verification, ανασχεδιασμός κώδικα."
+    },
+    "active": true
+  },
+  {
+    "code": "3511",
+    "name": {
+      "el": "Θεωρία και Υποδείγματα Βελτιστοποίησης"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      6
+    ],
+    "cycles": [
+      "operations-research",
+      "applied-math"
+    ],
+    "prerequisites": [
+      [
+        "3119"
+      ],
+      [
+        "3214"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. Ι, Μαθ. ΙΙ",
+    "instructors": [],
+    "description": {
+      "el": "Γραμμικός & μη γραμμικός προγραμματισμός, simplex, ευρετικές."
+    },
+    "active": true
+  },
+  {
+    "code": "3745",
+    "name": {
+      "el": "Μηχανική Μάθηση"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      6
+    ],
+    "cycles": [
+      "data-science-ml",
+      "software-systems",
+      "cybersecurity"
+    ],
+    "prerequisites": [
+      [
+        "3214"
+      ],
+      [
+        "3531"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. ΙΙ, ΤΝ",
+    "instructors": [],
+    "description": {
+      "el": "Εποπτευόμενη & μη εποπτευόμενη μάθηση, SVM, ensemble methods, deep learning βασικά."
+    },
+    "active": true
+  },
+  {
+    "code": "3543",
+    "name": {
+      "el": "Συστήματα Διαχείρισης και Ανάλυσης Δεδομένων"
+    },
+    "level": "CORE_ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      6
+    ],
+    "cycles": [
+      "data-science-ml",
+      "software-systems",
+      "data-knowledge-mgmt"
+    ],
+    "prerequisites": [
+      [
+        "3335"
+      ],
+      [
+        "3436"
+      ]
+    ],
+    "prerequisitesText": "ΔΔ, ΒΔ",
+    "instructors": [],
+    "description": {
+      "el": "NoSQL, Big Data (Hadoop/Spark), ανάλυση ροών δεδομένων."
+    },
+    "aliases": [
+      "Συστ. Διαχ. & Ανάλ. Δεδ."
+    ],
+    "active": true
+  },
+  {
+    "code": "3761",
+    "name": {
+      "el": "Ασφάλεια Δικτύων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "systems-networks",
+      "cybersecurity"
+    ],
+    "prerequisites": [
+      [
+        "3571"
+      ],
+      [
+        "3672"
+      ]
+    ],
+    "prerequisitesText": "Δίκτυα Επικ., Δίκτυα Υπολ.",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3771",
+    "name": {
+      "el": "Ασύρματα Δίκτυα και Κινητές Επικοινωνίες"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "systems-networks"
+    ],
+    "prerequisites": [
+      [
+        "3571"
+      ],
+      [
+        "3672"
+      ]
+    ],
+    "prerequisitesText": "Δίκτυα Επικ., Δίκτυα Υπολ.",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3781",
+    "name": {
+      "el": "Γραφικά Υπολογιστών"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "software-systems"
+    ],
+    "prerequisites": [
+      [
+        "3119"
+      ],
+      [
+        "3321"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. Ι, C++",
+    "instructors": [],
+    "language": "en",
+    "active": true
+  },
+  {
+    "code": "3632",
+    "name": {
+      "el": "Ειδικά Θέματα Αλγορίθμων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "operations-research",
+      "theoretical-cs"
+    ],
+    "prerequisites": [
+      [
+        "3335"
+      ],
+      [
+        "3432"
+      ]
+    ],
+    "prerequisitesText": "ΔΔ, Αλγόριθμοι",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3612",
+    "name": {
+      "el": "Ειδικά Θέματα Διακριτών Μαθηματικών"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "applied-math",
+      "theoretical-cs"
+    ],
+    "prerequisites": [
+      [
+        "3117"
+      ]
+    ],
+    "prerequisitesText": "Διακριτά Μαθ.",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3614",
+    "name": {
+      "el": "Εφαρμοσμένες Πιθανότητες και Πιθανοτικοί Αλγόριθμοι"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "operations-research",
+      "applied-math",
+      "theoretical-cs"
+    ],
+    "prerequisites": [
+      [
+        "3311"
+      ],
+      [
+        "3214"
+      ]
+    ],
+    "prerequisitesText": "Πιθανότητες, Μαθ. ΙΙ",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "7116",
+    "name": {
+      "el": "Λογιστικά Πληρ. Συστ. μέσω Διαδικτύου"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΛΟΧΡΗ",
+    "active": true
+  },
+  {
+    "code": "6127",
+    "name": {
+      "el": "Μέθοδοι Στατιστικής και Μηχανικής Μάθησης"
+    },
+    "level": "ELECTIVE",
+    "ects": 8,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "data-science-ml"
+    ],
+    "prerequisites": [
+      [
+        "3155"
+      ]
+    ],
+    "prerequisitesText": "Στατιστική στην Πληροφ.",
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "3634",
+    "name": {
+      "el": "Μεταγλωττιστές"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "systems-networks",
+      "software-systems"
+    ],
+    "prerequisites": [
+      [
+        "3335"
+      ],
+      [
+        "3434"
+      ]
+    ],
+    "prerequisitesText": "ΔΔ, Θεωρία Υπολογ.",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3818",
+    "name": {
+      "el": "Οικονομικά Δικτύων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "operations-research",
+      "systems-networks"
+    ],
+    "prerequisites": [
+      [
+        "3135"
+      ],
+      [
+        "3571"
+      ]
+    ],
+    "prerequisitesText": "ΕΕΥ, Δίκτυα Επικ.",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "8143",
+    "name": {
+      "el": "Συνδυαστική Βελτιστοποίηση"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "operations-research"
+    ],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "3573",
+    "name": {
+      "el": "Σήματα, Συστήματα και Ψηφιακή Επεξεργασία Σημάτων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "data-science-ml",
+      "applied-math",
+      "systems-networks"
+    ],
+    "prerequisites": [
+      [
+        "3119"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. Ι",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3644",
+    "name": {
+      "el": "Συστήματα Ανάκτησης Πληροφοριών"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "data-science-ml",
+      "data-knowledge-mgmt"
+    ],
+    "prerequisites": [
+      [
+        "3531"
+      ],
+      [
+        "3543"
+      ]
+    ],
+    "prerequisitesText": "ΤΝ, Συστ. Διαχ. & Ανάλ. Δεδ.",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3747",
+    "name": {
+      "el": "Τεχνολογίες και Προγρ. Εφαρμογών στον Ιστό"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7
+    ],
+    "cycles": [
+      "software-systems"
+    ],
+    "prerequisites": [
+      [
+        "3125"
+      ],
+      [
+        "3222"
+      ],
+      [
+        "3531"
+      ]
+    ],
+    "prerequisitesText": "Python, Java, ΤΝ",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3783",
+    "name": {
+      "el": "Αλληλεπίδραση Ανθρώπου-Υπολογιστή"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "software-systems",
+      "data-knowledge-mgmt"
+    ],
+    "prerequisites": [
+      [
+        "3125"
+      ],
+      [
+        "3222"
+      ]
+    ],
+    "prerequisitesText": "Python, Java",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "6005",
+    "name": {
+      "el": "Ανάλυση Δεδομένων"
+    },
+    "level": "ELECTIVE",
+    "ects": 8,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "data-science-ml"
+    ],
+    "prerequisites": [
+      [
+        "3155"
+      ]
+    ],
+    "prerequisitesText": "Στατιστική στην Πληροφ.",
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "3862",
+    "name": {
+      "el": "Ανάλυση Επίδοσης Πολύπλοκων Δικτυωμένων Συστημάτων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "operations-research",
+      "systems-networks"
+    ],
+    "prerequisites": [
+      [
+        "3311"
+      ],
+      [
+        "3571"
+      ]
+    ],
+    "prerequisitesText": "Πιθανότητες, Δίκτυα Επικ.",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3842",
+    "name": {
+      "el": "Ανάπτυξη Εφαρμογών Πληροφοριακών Συστημάτων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "data-knowledge-mgmt"
+    ],
+    "prerequisites": [
+      [
+        "3436"
+      ],
+      [
+        "3648"
+      ]
+    ],
+    "prerequisitesText": "ΒΔ, Τεχν. Λογ.",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3561",
+    "name": {
+      "el": "Αρχιτεκτονική Υπολογιστών"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "systems-networks"
+    ],
+    "prerequisites": [
+      [
+        "3365"
+      ]
+    ],
+    "prerequisitesText": "ΟΣΥ",
+    "instructors": [],
+    "language": "en",
+    "active": true
+  },
+  {
+    "code": "6082",
+    "name": {
+      "el": "Γραμμική Άλγεβρα ΙΙ"
+    },
+    "level": "ELECTIVE",
+    "ects": 7.5,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "applied-math"
+    ],
+    "prerequisites": [
+      [
+        "3214"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. ΙΙ",
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "3741",
+    "name": {
+      "el": "Εννοιολογική Μοντελοποίηση και Οργάνωση Γνώσεων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "software-systems",
+      "data-knowledge-mgmt"
+    ],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3743",
+    "name": {
+      "el": "Εξόρυξη Γνώσης και Επιστήμη Δεδομένων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "data-science-ml",
+      "data-knowledge-mgmt"
+    ],
+    "prerequisites": [
+      [
+        "3436"
+      ],
+      [
+        "3531"
+      ]
+    ],
+    "prerequisitesText": "ΒΔ, ΤΝ",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "2610",
+    "name": {
+      "el": "Επιχειρησιακή Στρατηγική"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "3713",
+    "name": {
+      "el": "Θεωρία Παιγνίων και Αποφάσεων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "operations-research",
+      "theoretical-cs"
+    ],
+    "prerequisites": [
+      [
+        "3119"
+      ],
+      [
+        "3311"
+      ]
+    ],
+    "prerequisitesText": "Μαθ. Ι, Πιθανότητες",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3814",
+    "name": {
+      "el": "Θεωρία Πληροφορίας"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "theoretical-cs"
+    ],
+    "prerequisites": [
+      [
+        "3311"
+      ]
+    ],
+    "prerequisitesText": "Πιθανότητες",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "8116",
+    "name": {
+      "el": "Μαθηματική Βελτιστοποίηση"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "operations-research"
+    ],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "3822",
+    "name": {
+      "el": "Παράλληλος Προγραμματισμός"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "systems-networks",
+      "software-systems"
+    ],
+    "prerequisites": [
+      [
+        "3321"
+      ]
+    ],
+    "prerequisitesText": "C++",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "6142",
+    "name": {
+      "el": "Πιθανότητες ΙΙ"
+    },
+    "level": "ELECTIVE",
+    "ects": 7.5,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "applied-math"
+    ],
+    "prerequisites": [
+      [
+        "3311"
+      ]
+    ],
+    "prerequisitesText": "Πιθανότητες",
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "6125",
+    "name": {
+      "el": "Προσομοίωση"
+    },
+    "level": "ELECTIVE",
+    "ects": 7,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "applied-math"
+    ],
+    "prerequisites": [
+      [
+        "3311"
+      ]
+    ],
+    "prerequisitesText": "Πιθανότητες",
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "3791",
+    "name": {
+      "el": "Στοιχεία Δικαίου της Πληροφορίας"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "cybersecurity"
+    ],
+    "prerequisites": [
+      [
+        "3135"
+      ],
+      [
+        "3125"
+      ]
+    ],
+    "prerequisitesText": "ΕΕΥ, Python",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3882",
+    "name": {
+      "el": "Τεχνολογία Πολυμέσων"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "systems-networks"
+    ],
+    "prerequisites": [
+      [
+        "3571"
+      ],
+      [
+        "3321"
+      ]
+    ],
+    "prerequisitesText": "Δίκτυα Επικ., C++",
+    "instructors": [],
+    "language": "en",
+    "active": true
+  },
+  {
+    "code": "3584",
+    "name": {
+      "el": "Τεχνολογική Καινοτομία και Επιχειρηματικότητα"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "3517",
+    "name": {
+      "el": "Υπολογισιμότητα και Πολυπλοκότητα"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      8
+    ],
+    "cycles": [
+      "theoretical-cs"
+    ],
+    "prerequisites": [
+      [
+        "3434"
+      ],
+      [
+        "3432"
+      ]
+    ],
+    "prerequisitesText": "Θεωρία Υπολογ., Αλγόριθμοι",
+    "instructors": [],
+    "active": true
+  },
+  {
+    "code": "6023",
+    "name": {
+      "el": "Γραμμικά Μοντέλα"
+    },
+    "level": "ELECTIVE",
+    "ects": 8,
+    "semesters": [
+      7,
+      8
+    ],
+    "cycles": [
+      "data-science-ml"
+    ],
+    "prerequisites": [
+      [
+        "3155"
+      ]
+    ],
+    "prerequisitesText": "Στατιστική στην Πληροφ.",
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "3802",
+    "name": {
+      "el": "Πτυχιακή Εργασία"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7,
+      8
+    ],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "cyclesNote": "κατά απόφαση επιβλέποντα",
+    "active": true
+  },
+  {
+    "code": "3850",
+    "name": {
+      "el": "Ερευνητική Εργασία"
+    },
+    "level": "ELECTIVE",
+    "ects": 6,
+    "semesters": [
+      7,
+      8
+    ],
+    "cycles": [],
+    "prerequisites": [
+      [
+        "3802"
+      ]
+    ],
+    "prerequisitesText": "Πτυχιακή Εργασία",
+    "instructors": [],
+    "cyclesNote": "κατά απόφαση επιβλέποντα",
+    "active": true
+  },
+  {
+    "code": "1131",
+    "name": {
+      "el": "Γενική Οικονομική Ιστορία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1225",
+    "name": {
+      "el": "Οικονομική Ιστορία της Ελλάδος"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "1705",
+    "name": {
+      "el": "Θεωρία Παιγνίων & Αβεβαιότητας"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΕ",
+    "active": true
+  },
+  {
+    "code": "2117",
+    "name": {
+      "el": "Αστικό Δίκαιο Ι"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2317",
+    "name": {
+      "el": "Μάνατζμεντ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2608",
+    "name": {
+      "el": "Διοίκηση Εφοδιαστικής Αλυσίδας"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "2836",
+    "name": {
+      "el": "Στρατηγικό Ηλεκτρονικό Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΟΔΕ",
+    "active": true
+  },
+  {
+    "code": "4126",
+    "name": {
+      "el": "Διεθνές Οικονομικό Δίκαιο"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΟΣ",
+    "active": true
+  },
+  {
+    "code": "5414",
+    "name": {
+      "el": "Διοίκηση Ανθρώπινου Δυναμικού"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5428",
+    "name": {
+      "el": "Ηγεσία και Ανάπτυξη Προσωπικών Δεξιοτήτων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5622",
+    "name": {
+      "el": "Εισαγωγή στο Μάρκετινγκ"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "5721",
+    "name": {
+      "el": "Ψυχολογία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "Μάρκετινγκ",
+    "active": true
+  },
+  {
+    "code": "6115",
+    "name": {
+      "el": "Αριθμητικές Μέθοδοι στη Στατιστική"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΣΤΑ",
+    "active": true
+  },
+  {
+    "code": "8111",
+    "name": {
+      "el": "Λήψη Επιχειρηματικών Αποφάσεων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8115",
+    "name": {
+      "el": "Οργανωσιακή Συμπεριφορά και Ηγεσία"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8134",
+    "name": {
+      "el": "Διοίκηση Παραγωγής και Υπηρεσιών"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8154",
+    "name": {
+      "el": "Επιχειρηματικότητα"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8159",
+    "name": {
+      "el": "Συστήματα Διαχείρισης Επιχειρησιακών Πόρων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8170",
+    "name": {
+      "el": "Συστήματα Διαχείρισης Μεγάλων Δεδομένων"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  },
+  {
+    "code": "8182",
+    "name": {
+      "el": "Ηθική, Υπευθυνότητα και Διακυβέρνηση"
+    },
+    "level": "FREE",
+    "ects": null,
+    "semesters": [],
+    "cycles": [],
+    "prerequisites": [],
+    "prerequisitesText": null,
+    "instructors": [],
+    "offeredBy": "ΔΕΤ",
+    "active": true
+  }
+]

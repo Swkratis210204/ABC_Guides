@@ -1,0 +1,343 @@
+[
+  {
+    "id": "amanatidis-georgios",
+    "name": {
+      "el": "Αμανατίδης Γεώργιος"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "applied-math",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "androutsopoulos-ion",
+    "name": {
+      "el": "Ανδρουτσόπουλος Ίων (Ιωάννης)"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "information-systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "apidopoulos-vasileios",
+    "name": {
+      "el": "Απιδόπουλος Βασίλειος"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "applied-math",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "vasilakis-andreas-alexandros",
+    "name": {
+      "el": "Βασιλάκης Ανδρέας-Αλέξανδρος"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "vassalos-vasileios",
+    "name": {
+      "el": "Βασσάλος Βασίλειος"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "information-systems",
+    "status": "ON_LEAVE"
+  },
+  {
+    "id": "vassalos-paraskeyas",
+    "name": {
+      "el": "Βασσάλος Παρασκευάς"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "applied-math",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "voulgaris-spyridon",
+    "name": {
+      "el": "Βούλγαρης Σπυρίδων"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "information-systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "dimakis-antonios",
+    "name": {
+      "el": "Δημάκης Αντώνιος"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "applied-math",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "kalogeraki-vasiliki",
+    "name": {
+      "el": "Καλογεράκη Βασιλική"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "koutsopoulos-iordanis",
+    "name": {
+      "el": "Κουτσόπουλος Ιορδάνης"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "kotidis-ioannis",
+    "name": {
+      "el": "Κωτίδης Ιωάννης"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "information-systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "marias-ioannis",
+    "name": {
+      "el": "Μαριάς Ιωάννης"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "information-systems",
+    "status": "ON_LEAVE"
+  },
+  {
+    "id": "markakis-eyaggelos",
+    "name": {
+      "el": "Μαρκάκης Ευάγγελος"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "xylomenos-georgios",
+    "name": {
+      "el": "Ξυλωμένος Γεώργιος"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "papaioannou-georgios",
+    "name": {
+      "el": "Παπαϊωάννου Γεώργιος"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "paylopoulos-ioannis",
+    "name": {
+      "el": "Παυλόπουλος Ιωάννης"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "information-systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "sgouritsa-alkmini",
+    "name": {
+      "el": "Σγουρίτσα Αλκμήνη"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "stamoulis-georgios",
+    "name": {
+      "el": "Σταμούλης Γεώργιος"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "stafylakis-themos",
+    "name": {
+      "el": "Σταφυλάκης Θέμος"
+    },
+    "category": "DEP",
+    "rank": "ASSOCIATE_PROFESSOR",
+    "sector": "information-systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "stergiopoulos-georgios",
+    "name": {
+      "el": "Στεργιόπουλος Γεώργιος"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "information-systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "syris-vasileios",
+    "name": {
+      "el": "Σύρης Βασίλειος"
+    },
+    "category": "DEP",
+    "rank": "FULL_PROFESSOR",
+    "sector": "systems",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "toumpis-stayros",
+    "name": {
+      "el": "Τουμπής Σταύρος"
+    },
+    "category": "DEP",
+    "rank": "ASSOCIATE_PROFESSOR",
+    "sector": "applied-math",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "foustoukou-eygenia",
+    "name": {
+      "el": "Φουστούκου Ευγενία"
+    },
+    "category": "DEP",
+    "rank": "ASSISTANT_PROFESSOR",
+    "sector": "applied-math",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "androutsos-athanasios",
+    "name": {
+      "el": "Ανδρούτσος Αθανάσιος"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "eyaggelou-iordanis",
+    "name": {
+      "el": "Ευαγγέλου Ιορδάνης"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "PENDING_APPOINTMENT"
+  },
+  {
+    "id": "kalergis-christos",
+    "name": {
+      "el": "Καλέργης Χρήστος"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "kapetis-chrysostomos",
+    "name": {
+      "el": "Καπέτης Χρυσόστομος"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "kefala-anna",
+    "name": {
+      "el": "Κεφάλα Άννα"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "koutsimpela-aggeliki",
+    "name": {
+      "el": "Κουτσιμπέλα Αγγελική"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "kyriakopoulou-antonia",
+    "name": {
+      "el": "Κυριακοπούλου Αντωνία"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "mprinia-vasiliki",
+    "name": {
+      "el": "Μπρίνια Βασιλική"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "papakonstantinopoulou-aikaterini",
+    "name": {
+      "el": "Παπακωνσταντινοπούλου Αικατερίνη"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ON_LEAVE",
+    "statusNote": "άδεια 2026-2027"
+  },
+  {
+    "id": "spiliopoulos-spilios",
+    "name": {
+      "el": "Σπηλιόπουλος Σπήλιος"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "togantzi-maria",
+    "name": {
+      "el": "Τογαντζή Μαρία"
+    },
+    "category": "EDIP",
+    "rank": null,
+    "sector": null,
+    "status": "ACTIVE"
+  }
+]

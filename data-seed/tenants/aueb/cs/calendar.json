@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "academicYear": "2026-2027",
+  "terms": [
+    {
+      "id": "winter",
+      "name": {
+        "el": "Χειμερινό εξάμηνο"
+      },
+      "semesterType": "WINTER",
+      "start": "2026-10-05",
+      "end": "2027-01-15"
+    },
+    {
+      "id": "spring",
+      "name": {
+        "el": "Εαρινό εξάμηνο"
+      },
+      "semesterType": "SPRING",
+      "start": "2027-02-15",
+      "end": "2027-05-28"
+    }
+  ],
+  "examPeriods": [
+    {
+      "id": "winter-exams",
+      "name": {
+        "el": "Εξεταστική Χειμερινού"
+      },
+      "termId": "winter",
+      "start": "2027-01-18",
+      "end": "2027-02-12"
+    },
+    {
+      "id": "spring-exams",
+      "name": {
+        "el": "Εξεταστική Εαρινού"
+      },
+      "termId": "spring",
+      "start": "2027-05-31",
+      "end": "2027-06-25"
+    },
+    {
+      "id": "resit",
+      "name": {
+        "el": "Επαναληπτική (Σεπτέμβριος)"
+      },
+      "termId": null,
+      "start": null,
+      "end": null,
+      "note": {
+        "el": "Τελευταία εβδομάδα Αυγούστου (4 εβδομάδες)"
+      }
+    }
+  ],
+  "holidays": [
+    {
+      "id": "christmas-break",
+      "name": {
+        "el": "Διακοπές Χριστουγέννων"
+      },
+      "start": "2026-12-24",
+      "end": "2027-01-06",
+      "kind": "BREAK"
+    },
+    {
+      "id": "easter-break",
+      "name": {
+        "el": "Διακοπές Πάσχα"
+      },
+      "start": "2027-04-26",
+      "end": "2027-05-09",
+      "kind": "BREAK"
+    },
+    {
+      "id": "h-2026-10-28",
+      "name": {
+        "el": "Εθνική εορτή (28η Οκτωβρίου)"
+      },
+      "start": "2026-10-28",
+      "end": null,
+      "kind": "PUBLIC_HOLIDAY"
+    },
+    {
+      "id": "h-2026-11-17",
+      "name": {
+        "el": "Επέτειος Πολυτεχνείου"
+      },
+      "start": "2026-11-17",
+      "end": null,
+      "kind": "PUBLIC_HOLIDAY"
+    },
+    {
+      "id": "h-2027-01-06",
+      "name": {
+        "el": "Θεοφάνεια"
+      },
+      "start": "2027-01-06",
+      "end": null,
+      "kind": "PUBLIC_HOLIDAY"
+    },
+    {
+      "id": "h-2027-03-15",
+      "name": {
+        "el": "Καθαρά Δευτέρα"
+      },
+      "start": "2027-03-15",
+      "end": null,
+      "kind": "PUBLIC_HOLIDAY"
+    },
+    {
+      "id": "h-2027-03-25",
+      "name": {
+        "el": "Εθνική εορτή (25η Μαρτίου)"
+      },
+      "start": "2027-03-25",
+      "end": null,
+      "kind": "PUBLIC_HOLIDAY"
+    },
+    {
+      "id": "h-2027-05-01",
+      "name": {
+        "el": "Πρωτομαγιά"
+      },
+      "start": "2027-05-01",
+      "end": null,
+      "kind": "PUBLIC_HOLIDAY"
+    },
+    {
+      "id": "h-2027-06-21",
+      "name": {
+        "el": "Αγίου Πνεύματος"
+      },
+      "start": "2027-06-21",
+      "end": null,
+      "kind": "PUBLIC_HOLIDAY"
+    }
+  ]
+}
