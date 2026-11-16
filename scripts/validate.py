@@ -13,7 +13,8 @@ from referencing import Registry, Resource
 from referencing.jsonschema import DRAFT202012
 
 ROOT = Path(__file__).resolve().parent.parent
-CONTENT = ROOT / "content"
+# Optional first argument: check a different content folder (used by the tests).
+CONTENT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT / "content"
 SCHEMAS = ROOT / "schema"
 
 # Which schema checks which file (path relative to content/<university>/).
