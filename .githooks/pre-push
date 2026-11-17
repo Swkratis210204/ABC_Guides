@@ -1,0 +1,12 @@
+#!/bin/sh
+# Runs before every `git push`. If a test or the content check fails, the push is cancelled.
+# Turn it on once per copy of the repo with:  git config core.hooksPath .githooks
+cd "$(dirname "$0")/.." || exit 1
+echo "Running tests and checking the content before pushing..."
+if python -m pytest tests -q && python scripts/validate.py; then
+  echo "All checks passed. Pushing."
+else
+  echo ""
+  echo "PUSH CANCELLED: the checks above failed. Fix the problems and push again."
+  exit 1
+fi

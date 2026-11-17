@@ -16,11 +16,12 @@ No backend, no database, no CMS. Everything is static files and GitHub, so the r
 ## Repository layout
 
 ```
+content/index.json   which universities to show, in order
 content/<university>/
-  university/        calendar, grading scale, schools, free electives
+  university/        about the university, schools, calendar, grading scale
   <department>/
-    general/         administration, sectors, faculty, programmes, degree requirements
-    curriculum/      one file per academic year
+    general/         administration, sectors, faculty, free electives, international partners, programmes
+    curriculum/      one file per programme per year, including its requirements
 schema/              JSON Schemas that define what valid content looks like
 scripts/validate.py  checks content and reports problems in plain language
 tests/               automatic tests for the checker and the sample content
@@ -46,7 +47,16 @@ PROBLEM in content/example-university/computer-science/curriculum/2026-2027.json
   In "courses" > item number 4 ("3050"): "semester" is not a field we know - did you mean "semesters"?
 ```
 
-The same check runs on GitHub for every change (`.github/workflows/deploy.yml`).
+## Checks before a change is accepted
+
+- **On GitHub:** `.github/workflows/checks.yml` runs all the tests and the content check on every push and every proposed change. A red result means the change must not be accepted.
+- **On your computer:** `.githooks/pre-push` runs the same checks before every `git push` and cancels the push if anything fails. Turn it on once per copy of the repository:
+
+  ```
+  git config core.hooksPath .githooks
+  ```
+
+- **To stop broken changes from reaching `main` at all**, the repository owner turns on branch protection on GitHub (Settings, Branches, require the `tests` check to pass before merging). Changes then go in as proposals that are merged only when the check is green. This is roadmap step 3.
 
 ## Documentation
 

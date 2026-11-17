@@ -1,0 +1,17 @@
+{
+  "degree": "postgraduate",
+  "program": "diploma-cybersecurity",
+  "academic_year": "2026-2027",
+  "requirements": {
+    "total_ects": 60,
+    "rules": [
+      { "id": "all-core", "title": { "en": "Core courses" }, "description": { "en": "Pass all core courses." } }
+    ]
+  },
+  "levels": [
+    { "id": "core", "short": "Core", "name": { "en": "Core course" } }
+  ],
+  "courses": [
+    { "code": "CY601", "name": { "en": "Applied Cryptography" }, "level": "core", "ects": 8, "semesters": [1], "instructors": ["kim-robin"], "prerequisites": ["computer-science/undergraduate:2010"] }
+  ]
+}

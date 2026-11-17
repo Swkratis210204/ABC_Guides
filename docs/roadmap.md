@@ -7,7 +7,7 @@ Status: ✅ done, 🔄 in progress, ⬜ not started.
 | # | Step | Status |
 |---|---|---|
 | 1 | Design the first JSON schema, checker and tests | ✅ |
-| 2 | Finish the schema and freeze version 1 | ⬜ |
+| 2 | Finish the schema and freeze version 1 | ✅ |
 | 3 | Refuse changes that don't match the schema | ⬜ |
 | 4 | Instructions for people editing JSON | ⬜ |
 | 5 | Put in real data | ⬜ |
@@ -22,16 +22,16 @@ Status: ✅ done, 🔄 in progress, ⬜ not started.
 ### 1. First schema, checker and tests ✅
 Schema for the three tiers, sample data, a checker with plain-language messages, automatic tests. Details in [step-1.md](work/step-1.md).
 
-### 2. Finish the schema and freeze version 1
-Fix the known gaps, then stop changing the shape.
-- Open lists for ranks and degree types, not fixed English words.
-- Several programmes or degrees per department.
-- Courses and teachers shared across departments.
-- Credits and grades that are not only ECTS and numbers.
-- Free electives per department. Decide whether degree requirements stay plain text.
-- Add a list of which universities and departments exist.
+### 2. Finish the schema and freeze version 1 ✅
+Every gap was reviewed one by one. The decisions are in [work/step-2-decisions.md](work/step-2-decisions.md).
+- Ranks and degree types: the fixed lists stay, with an optional own title for rank `other`. Labels for the website come in step 6.
+- Several programmes per department: done. Each curriculum says if it is undergraduate or postgraduate and carries its own requirements.
+- Courses and teachers shared across departments: done, by writing the department first.
+- Credits and grades: ECTS and numeric grades stay for now. A calculator comes later.
+- Free electives per department: done. Degree requirements stay plain sentences, inside each curriculum.
+- List of universities and departments: done (`content/index.json`).
 
-Done when: sample data covers all of it and the tests pass.
+Done when: sample data covers all of it and the tests pass. Both are true (66 tests).
 
 ### 3. Refuse changes that don't match the schema
 Nothing goes live unless the check passes.

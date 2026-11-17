@@ -3,18 +3,23 @@
   "$id": "urn:schema:university",
   "title": "University: basic information (university/university.json)",
   "type": "object",
-  "required": ["name", "default_language"],
+  "required": ["name", "default_language", "departments"],
   "additionalProperties": false,
   "properties": {
     "name": { "description": "Full name of the university", "$ref": "urn:schema:common#/$defs/text" },
-    "short_name": { "description": "Short name or abbreviation. Example: AUEB", "type": "string" },
+    "short_name": { "description": "Short name or abbreviation, per language. Example: { \"en\": \"AUEB\", \"el\": \"ΟΠΑ\" }", "$ref": "urn:schema:common#/$defs/text" },
     "website": { "$ref": "urn:schema:common#/$defs/url" },
-    "country": { "description": "Country name", "type": "string" },
+    "country": { "description": "Country name, per language. Example: { \"en\": \"Greece\", \"el\": \"Ελλάδα\" }", "$ref": "urn:schema:common#/$defs/text" },
     "languages": {
-      "description": "Languages the site is written in, as two-letter codes. Example: [\"el\", \"en\"]",
-      "type": "array", "minItems": 1,
-      "items": { "type": "string", "pattern": "^[a-z]{2}$" }
+      "description": "Languages the site is written in: en (English), el (Greek). Example: [\"el\", \"en\"]",
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "enum": ["en", "el"] }
     },
-    "default_language": { "description": "The language shown first. Must be one of the languages above. Example: el", "type": "string", "pattern": "^[a-z]{2}$" }
+    "default_language": { "description": "The language shown first: en or el. Must be one of the languages above if you list them. Example: el", "enum": ["en", "el"] },
+    "departments": {
+      "description": "The folder names of the departments, in the order they appear on the site. A department that is not listed here is not shown.",
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": { "$ref": "urn:schema:common#/$defs/id" }
+    }
   }
 }

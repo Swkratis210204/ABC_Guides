@@ -12,10 +12,11 @@ CONTENT = ROOT / "content"
 
 # Which schema describes which file name
 KIND_BY_FILE = {
-    "university.json": "university", "schools.json": "schools", "grading_scale.json": "grading_scale",
+    "university.json": "university", "schools.json": "schools", "index.json": "index",
+    "international_partners.json": "international_partners", "grading_scale.json": "grading_scale",
     "free_electives.json": "free_electives", "department.json": "department",
     "administration.json": "administration", "sectors.json": "sectors", "faculty.json": "faculty",
-    "postgraduate_programs.json": "postgraduate_programs", "degree_requirements.json": "degree_requirements",
+    "postgraduate_programs.json": "postgraduate_programs",
 }
 
 
@@ -24,7 +25,7 @@ def kind_of(path):
         return KIND_BY_FILE[path.name]
     if path.parent.name == "calendar":
         return "calendar"
-    if path.parent.name == "curriculum":
+    if "curriculum" in path.parts:
         return "curriculum"
     raise AssertionError(f"Unknown content file: {path}")
 

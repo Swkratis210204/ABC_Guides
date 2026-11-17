@@ -1,8 +1,9 @@
 {
-  "name": { "en": "Example University", "fr": "Université d'Exemple" },
-  "short_name": "EXU",
+  "name": { "en": "Example University", "el": "Πανεπιστήμιο Παράδειγμα" },
+  "short_name": { "en": "EXU", "el": "ΠΠ" },
   "website": "https://www.example.edu",
-  "country": "Exampleland",
-  "languages": ["en", "fr"],
-  "default_language": "en"
+  "country": { "en": "Exampleland", "el": "Παραδειγμαχώρα" },
+  "languages": ["en", "el"],
+  "default_language": "en",
+  "departments": ["computer-science", "mathematics"]
 }

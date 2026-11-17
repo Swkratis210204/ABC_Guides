@@ -1,14 +1,15 @@
-name: Check content
+name: Checks
 
-# Runs on every change. Site build and deploy steps will be added once the site is designed.
+# Runs on every push and every proposed change. A red result means the change must not be accepted.
+# Site build and deploy steps will be added once the site is designed.
 on:
   push:
-    branches: [main, testing]
   pull_request:
   workflow_dispatch:
 
 jobs:
-  validate:
+  tests:
+    name: tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,7 +19,7 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - name: Run the validator's own tests
+      - name: Run all tests
         run: python -m pytest tests -q
       - name: Check the content files
         run: python scripts/validate.py

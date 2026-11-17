@@ -9,10 +9,10 @@
       "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
     },
     "text": {
-      "description": "Text that people read. Write it once per language, using the two-letter language code. Example: { \"en\": \"Databases\", \"el\": \"Βάσεις Δεδομένων\" }. One language is enough.",
+      "description": "Text that people read. Write it once per language: en for English, el for Greek. Example: { \"en\": \"Databases\", \"el\": \"Βάσεις Δεδομένων\" }. One language is enough.",
       "type": "object",
       "minProperties": 1,
-      "propertyNames": { "pattern": "^[a-z]{2}$" },
+      "propertyNames": { "enum": ["en", "el"] },
       "additionalProperties": { "type": "string", "minLength": 1 }
     },
     "date": {
@@ -34,6 +34,16 @@
       "description": "An email address. Example: office@example.edu",
       "type": "string",
       "pattern": "^\\S+@\\S+\\.\\S+$"
+    },
+    "person_ref": {
+      "description": "A person's id from faculty.json. Example: smith-john. For a person in another department, write the department first: mathematics:euler-leo",
+      "type": "string",
+      "pattern": "^([a-z0-9]+(-[a-z0-9]+)*:)?[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "course_ref": {
+      "description": "A course code. Example: 3117. For a course of another department write the department first: cs:3117. For a postgraduate programme of that department: cs/msc-data-science:DS501. For its undergraduate courses when the code alone is unclear: cs/undergraduate:3117",
+      "type": "string",
+      "pattern": "^([a-z0-9]+(-[a-z0-9]+)*(/[a-z0-9]+(-[a-z0-9]+)*)?:)?[^\\s:/]+$"
     },
     "ects": {
       "description": "Number of ECTS credits (a number such as 6 or 7.5)",

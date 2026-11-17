@@ -1,5 +1,5 @@
 {
   "roles": [
-    { "id": "head", "title": { "en": "Head of Department" }, "person": "Avery Stone", "faculty_id": "stone-avery" }
+    { "id": "head", "title": { "en": "Head of Department" }, "faculty_id": "stone-avery" }
   ]
 }

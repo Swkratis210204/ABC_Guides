@@ -11,16 +11,18 @@
       "items": {
         "type": "object", "required": ["id", "name"], "additionalProperties": false,
         "properties": {
-          "id": { "description": "A short code for this person. Example: smith-john", "$ref": "urn:schema:common#/$defs/id" },
-          "name": { "description": "Full name as it should appear on the site", "type": "string", "minLength": 1 },
+          "id": { "description": "A short code for this person. Example: smith-john. Every other file points at the person with this code.", "$ref": "urn:schema:common#/$defs/id" },
+          "name": { "description": "Full name, written per language. Example: { \"en\": \"John Smith\", \"el\": \"Τζον Σμιθ\" }", "$ref": "urn:schema:common#/$defs/text" },
           "rank": {
             "description": "One of: professor, associate_professor, assistant_professor, lecturer, teaching_staff, researcher, visiting, other",
             "enum": ["professor", "associate_professor", "assistant_professor", "lecturer", "teaching_staff", "researcher", "visiting", "other"]
           },
+          "other_title": { "description": "Only when the rank is other: the person's own title, written per language. Example: { \"en\": \"Reader\" }", "$ref": "urn:schema:common#/$defs/text" },
           "sector": { "description": "The id of this person's sector (from sectors.json)", "$ref": "urn:schema:common#/$defs/id" },
           "status": { "description": "One of: active, on_leave, retired, emeritus, former. Leave out if active. Use former for people who left: keep them in the list so old years can still refer to them.", "enum": ["active", "on_leave", "retired", "emeritus", "former"] },
           "first_year": { "description": "First academic year this person taught here (optional). Example: 2015-2016", "$ref": "urn:schema:common#/$defs/academic_year" },
           "last_year": { "description": "Last academic year this person taught here (optional). Example: 2023-2024", "$ref": "urn:schema:common#/$defs/academic_year" },
+          "meeting_hours": { "description": "When students can meet this person, written per language. Example: { \"en\": \"Mondays 10:00 to 12:00\" }", "$ref": "urn:schema:common#/$defs/text" },
           "email": { "$ref": "urn:schema:common#/$defs/email" },
           "phone": { "type": "string" },
           "office": { "type": "string" },

@@ -1,5 +1,5 @@
 {
   "members": [
-    { "id": "euler-leo", "name": "Leo Euler", "rank": "professor", "sector": "analysis" }
+    { "id": "euler-leo", "name": { "en": "Leo Euler", "el": "Λέο Όιλερ" }, "rank": "professor", "sector": "analysis" }
   ]
 }

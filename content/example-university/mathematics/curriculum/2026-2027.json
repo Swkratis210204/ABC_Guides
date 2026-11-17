@@ -1,5 +1,12 @@
 {
+  "degree": "undergraduate",
   "academic_year": "2026-2027",
+  "requirements": {
+    "total_ects": 180,
+    "rules": [
+      { "id": "all-mandatory", "title": { "en": "Mandatory courses" }, "description": { "en": "Pass every mandatory course." } }
+    ]
+  },
   "levels": [
     { "id": "mandatory", "short": "M", "name": { "en": "Mandatory" } }
   ],

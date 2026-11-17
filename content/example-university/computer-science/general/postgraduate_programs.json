@@ -1,10 +1,10 @@
 {
   "programs": [
-    { "id": "msc-data-science", "name": { "en": "MSc in Data Science" }, "degree": "masters", "duration_semesters": 3, "ects": 90,
+    { "id": "msc-data-science", "name": { "en": "MSc in Data Science" }, "degree": "masters", "duration_semesters": 3,
       "director": "lee-jordan", "website": "https://cs.example.edu/msc-ds", "description": { "en": "A three-semester program in data science." } },
     { "id": "phd-computer-science", "name": { "en": "PhD in Computer Science" }, "degree": "phd" },
     { "id": "mba-technology", "name": { "en": "MBA in Technology Management" }, "degree": "mba" },
-    { "id": "diploma-cybersecurity", "name": { "en": "Diploma in Cybersecurity" }, "degree": "diploma" },
+    { "id": "diploma-cybersecurity", "name": { "en": "Diploma in Cybersecurity" }, "degree": "diploma", "director": "mathematics:euler-leo" },
     { "id": "summer-school", "name": { "en": "Summer School" }, "degree": "other" }
   ]
 }

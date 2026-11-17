@@ -8,13 +8,14 @@
   "properties": {
     "academic_year": { "$ref": "urn:schema:common#/$defs/academic_year" },
     "terms": {
-      "description": "The teaching periods (usually a winter and a spring semester)",
-      "type": "array", "minItems": 1,
+      "description": "The two semesters of the year: semester 1 is the winter semester (October to January) and semester 2 is the spring semester (February to June). Write exactly one of each.",
+      "type": "array", "minItems": 2, "maxItems": 2,
       "items": {
-        "type": "object", "required": ["id", "name", "start", "end"], "additionalProperties": false,
+        "type": "object", "required": ["id", "name", "semester", "start", "end"], "additionalProperties": false,
         "properties": {
           "id": { "$ref": "urn:schema:common#/$defs/id" },
           "name": { "$ref": "urn:schema:common#/$defs/text" },
+          "semester": { "description": "1 for the winter semester (October to January), 2 for the spring semester (February to June)", "enum": [1, 2] },
           "start": { "$ref": "urn:schema:common#/$defs/date" },
           "end": { "$ref": "urn:schema:common#/$defs/date" }
         }
@@ -24,10 +25,11 @@
       "description": "Exam sessions",
       "type": "array",
       "items": {
-        "type": "object", "required": ["id", "name", "start", "end"], "additionalProperties": false,
+        "type": "object", "required": ["id", "name", "type", "start", "end"], "additionalProperties": false,
         "properties": {
           "id": { "$ref": "urn:schema:common#/$defs/id" },
           "name": { "$ref": "urn:schema:common#/$defs/text" },
+          "type": { "description": "regular (the normal exams at the end of a term) or resit (the September revision exams for students who have not passed)", "enum": ["regular", "resit"] },
           "term": { "description": "The id of the term these exams belong to (optional)", "$ref": "urn:schema:common#/$defs/id" },
           "start": { "$ref": "urn:schema:common#/$defs/date" },
           "end": { "$ref": "urn:schema:common#/$defs/date" }

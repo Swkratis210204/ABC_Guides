@@ -1,5 +1,14 @@
 {
+  "degree": "undergraduate",
   "academic_year": "2026-2027",
+  "requirements": {
+    "total_ects": 240,
+    "min_semesters": 8,
+    "rules": [
+      { "id": "mandatory", "title": { "en": "Mandatory courses" }, "description": { "en": "Pass all mandatory courses." } },
+      { "id": "language", "title": { "en": "Language certificate" }, "description": { "en": "Provide an English certificate at level B2 or higher." } }
+    ]
+  },
   "ects_caps": { "per_semester": 36, "per_year": 66 },
   "levels": [
     { "id": "mandatory", "short": "UP", "name": { "en": "Mandatory" }, "description": { "en": "Every student must pass these." } },
@@ -14,17 +23,17 @@
   "courses": [
     {
       "code": "1001",
-      "name": { "en": "Discrete Mathematics", "fr": "Mathématiques discrètes" },
+      "name": { "en": "Discrete Mathematics", "el": "Διακριτά Μαθηματικά" },
       "level": "mandatory",
       "ects": 6,
       "semesters": [1],
-      "instructors": ["lee-jordan"],
+      "instructors": ["lee-jordan", "mathematics:euler-leo"],
       "cycles": ["theory"],
       "language": "en",
       "description": { "en": "Sets, logic, proofs, combinatorics and graphs." },
       "active": true
     },
-    { "code": "1002", "name": { "en": "Programming" }, "level": "mandatory", "ects": 6, "semesters": [1], "instructors": ["morgan-alex", "kim-robin"] },
+    { "code": "1002", "name": { "en": "Programming" }, "level": "mandatory", "ects": 6, "semesters": [1], "instructors": ["morgan-alex", "kim-robin"], "language": "el" },
     { "code": "2010", "name": { "en": "Data Structures" }, "level": "mandatory", "ects": 7.5, "semesters": [3], "prerequisites": ["1002"], "instructors": ["morgan-alex"] },
     {
       "code": "3050",
@@ -32,10 +41,11 @@
       "level": "core-elective",
       "ects": 6,
       "semesters": [5, 6],
-      "prerequisites": ["1001", "2010"],
+      "available_from": 3,
+      "prerequisites": ["1001", "2010", "mathematics:1001"],
       "cycles": ["data", "theory"]
     },
-    { "code": "3900", "name": { "en": "Thesis" }, "level": "elective", "ects": 12, "semesters": [7, 8] },
+    { "code": "3900", "name": { "en": "Thesis" }, "level": "elective", "ects": 12, "semesters": [7, 8], "available_from": 5 },
     { "code": "4001", "name": { "en": "Old Course No Longer Offered" }, "level": "free", "ects": 3, "semesters": [8], "active": false }
   ]
 }

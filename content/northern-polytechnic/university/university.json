@@ -1,6 +1,7 @@
 {
   "name": { "el": "Πολυτεχνείο του Βορρά", "en": "Northern Polytechnic" },
-  "short_name": "NP",
+  "short_name": { "en": "NP", "el": "ΠτΒ" },
   "languages": ["el", "en"],
-  "default_language": "el"
+  "default_language": "el",
+  "departments": ["civil-engineering"]
 }

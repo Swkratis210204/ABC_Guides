@@ -1,21 +1,23 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "urn:schema:free_electives",
-  "title": "Free electives pool: courses any student of the university may take (university/free_electives.json)",
+  "title": "Free electives pool of a department: courses its students may take as free electives (general/free_electives.json)",
   "type": "object",
   "required": ["courses"],
   "additionalProperties": false,
   "properties": {
     "note": { "description": "Optional rules or explanation shown above the list", "$ref": "urn:schema:common#/$defs/text" },
     "courses": {
+      "description": "Each entry either points at a course (use course) or describes one itself (use code, name and ects). Never both.",
       "type": "array",
       "items": {
-        "type": "object", "required": ["code", "name", "ects"], "additionalProperties": false,
+        "type": "object", "additionalProperties": false,
         "properties": {
-          "code": { "description": "The course code, exactly as the university prints it. Example: 4102", "type": "string", "minLength": 1 },
+          "course": { "description": "Points at a course that is in a curriculum. Example: mathematics:1001. The name and ECTS then come from that course, so leave out code, name and ects.", "$ref": "urn:schema:common#/$defs/course_ref" },
+          "code": { "description": "For a course that is not in any curriculum on the site: its code, exactly as the university prints it, but without spaces and without the characters : and /. Example: 9001", "type": "string", "pattern": "^[^\\s:/]+$" },
           "name": { "$ref": "urn:schema:common#/$defs/text" },
           "ects": { "$ref": "urn:schema:common#/$defs/ects" },
-          "offered_by": { "description": "Name of the department that teaches it", "type": "string" }
+          "offered_by": { "description": "Name of the department that teaches it (only with code, name and ects)", "type": "string" }
         }
       }
     }

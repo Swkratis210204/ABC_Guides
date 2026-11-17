@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:schema:international_partners",
+  "title": "Partner universities abroad: Erasmus and other agreements (general/international_partners.json)",
+  "type": "object",
+  "required": ["partners"],
+  "additionalProperties": false,
+  "properties": {
+    "partners": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["id", "name", "country", "type"], "additionalProperties": false,
+        "properties": {
+          "id": { "$ref": "urn:schema:common#/$defs/id" },
+          "name": { "description": "Name of the partner university, written per language", "$ref": "urn:schema:common#/$defs/text" },
+          "country": { "description": "Country of the partner university", "type": "string", "minLength": 1 },
+          "city": { "type": "string" },
+          "type": { "description": "The kind of agreement: erasmus, exchange, double_degree or other", "enum": ["erasmus", "exchange", "double_degree", "other"] },
+          "erasmus_code": { "description": "The Erasmus code of the partner, if it has one. Example: D MUNCHEN01", "type": "string" },
+          "study_levels": {
+            "description": "Which levels of study the agreement covers: bachelor, master, phd",
+            "type": "array", "uniqueItems": true, "items": { "enum": ["bachelor", "master", "phd"] }
+          },
+          "website": { "$ref": "urn:schema:common#/$defs/url" },
+          "notes": { "description": "Anything students should know, such as language requirements or number of places", "$ref": "urn:schema:common#/$defs/text" }
+        }
+      }
+    }
+  }
+}

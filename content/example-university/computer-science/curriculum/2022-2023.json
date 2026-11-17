@@ -1,5 +1,13 @@
 {
+  "degree": "undergraduate",
   "academic_year": "2022-2023",
+  "requirements": {
+    "total_ects": 210,
+    "min_semesters": 7,
+    "rules": [
+      { "id": "mandatory", "title": { "en": "Mandatory courses" }, "description": { "en": "Pass all mandatory courses (older rules)." } }
+    ]
+  },
   "levels": [
     { "id": "mandatory", "short": "UP", "name": { "en": "Mandatory" } },
     { "id": "elective", "short": "E", "name": { "en": "Elective" } }
@@ -10,6 +18,6 @@
   "courses": [
     { "code": "1001", "name": { "en": "Discrete Mathematics" }, "level": "mandatory", "ects": 5, "semesters": [1], "instructors": ["stone-avery"] },
     { "code": "1500", "name": { "en": "Old Networks Course" }, "level": "elective", "ects": 6, "semesters": [6],
-      "cycles": ["old-networks"], "instructor_names": ["Guest Lecturer"], "active": false }
+      "cycles": ["old-networks"], "instructor_names": [{ "en": "Guest Lecturer", "el": "Προσκεκλημένος Ομιλητής" }], "active": false }
   ]
 }

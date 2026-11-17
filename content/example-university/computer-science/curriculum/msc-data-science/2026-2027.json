@@ -1,0 +1,21 @@
+{
+  "degree": "postgraduate",
+  "program": "msc-data-science",
+  "academic_year": "2026-2027",
+  "requirements": {
+    "total_ects": 90,
+    "min_semesters": 3,
+    "rules": [
+      { "id": "thesis", "title": { "en": "Master's thesis" }, "description": { "en": "Complete and defend a thesis in the third semester." } }
+    ]
+  },
+  "levels": [
+    { "id": "core", "short": "Core", "name": { "en": "Core course" } },
+    { "id": "elective", "short": "Elec", "name": { "en": "Elective course" } }
+  ],
+  "courses": [
+    { "code": "DS501", "name": { "en": "Statistical Learning" }, "level": "core", "ects": 10, "semesters": [1], "instructors": ["lee-jordan"] },
+    { "code": "DS502", "name": { "en": "Big Data Systems" }, "level": "core", "ects": 10, "semesters": [1], "instructors": ["morgan-alex"] },
+    { "code": "DS510", "name": { "en": "Deep Learning" }, "level": "elective", "ects": 5, "semesters": [2], "prerequisites": ["DS501", "computer-science:2010"] }
+  ]
+}

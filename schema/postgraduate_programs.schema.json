@@ -15,8 +15,7 @@
           "name": { "$ref": "urn:schema:common#/$defs/text" },
           "degree": { "description": "One of: masters, phd, mba, diploma, other", "enum": ["masters", "phd", "mba", "diploma", "other"] },
           "duration_semesters": { "description": "How many semesters the program lasts", "type": "integer", "minimum": 1 },
-          "ects": { "description": "Total ECTS of the program", "type": "number", "minimum": 0 },
-          "director": { "description": "The id of the director in faculty.json (optional)", "$ref": "urn:schema:common#/$defs/id" },
+          "director": { "description": "The director's id from a faculty list. Example: lee-jordan, or mathematics:euler-leo for another department (optional)", "$ref": "urn:schema:common#/$defs/person_ref" },
           "website": { "$ref": "urn:schema:common#/$defs/url" },
           "description": { "$ref": "urn:schema:common#/$defs/text" }
         }

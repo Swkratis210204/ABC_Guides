@@ -9,12 +9,12 @@
     "roles": {
       "type": "array",
       "items": {
-        "type": "object", "required": ["id", "title", "person"], "additionalProperties": false,
+        "type": "object", "required": ["id", "title"], "additionalProperties": false,
         "properties": {
           "id": { "$ref": "urn:schema:common#/$defs/id" },
           "title": { "description": "The role. Example: Head of Department", "$ref": "urn:schema:common#/$defs/text" },
-          "person": { "description": "Full name of the person", "type": "string", "minLength": 1 },
-          "faculty_id": { "description": "If this person is in faculty.json, their id there (optional)", "$ref": "urn:schema:common#/$defs/id" },
+          "faculty_id": { "description": "Use this when the person is in a faculty list. Then leave out person. Example: smith-john, or mathematics:euler-leo for another department.", "$ref": "urn:schema:common#/$defs/person_ref" },
+          "person": { "description": "Use this only for people who are not in any faculty list, such as the secretariat. Written per language. Then leave out faculty_id.", "$ref": "urn:schema:common#/$defs/text" },
           "email": { "$ref": "urn:schema:common#/$defs/email" },
           "phone": { "type": "string" }
         }

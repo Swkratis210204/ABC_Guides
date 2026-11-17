@@ -1,8 +1,10 @@
 {
   "academic_year": "2026-2027",
   "terms": [
-    { "id": "autumn", "name": { "el": "Φθινοπωρινό", "en": "Autumn" }, "start": "2026-09-21", "end": "2026-12-18" },
-    { "id": "winter", "name": { "el": "Χειμερινό", "en": "Winter" }, "start": "2027-01-11", "end": "2027-04-02" },
-    { "id": "summer", "name": { "el": "Θερινό", "en": "Summer" }, "start": "2027-04-19", "end": "2027-07-09" }
+    { "id": "winter", "name": { "el": "Χειμερινό εξάμηνο", "en": "Winter semester" }, "semester": 1, "start": "2026-10-05", "end": "2027-01-15" },
+    { "id": "spring", "name": { "el": "Εαρινό εξάμηνο", "en": "Spring semester" }, "semester": 2, "start": "2027-02-01", "end": "2027-05-21" }
+  ],
+  "exam_periods": [
+    { "id": "september-resits", "name": { "el": "Επαναληπτικές εξετάσεις Σεπτεμβρίου", "en": "September resits" }, "type": "resit", "start": "2027-09-01", "end": "2027-09-18" }
   ]
 }

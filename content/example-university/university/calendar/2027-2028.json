@@ -1,7 +1,7 @@
 {
   "academic_year": "2027-2028",
   "terms": [
-    { "id": "winter", "name": { "en": "Winter semester" }, "start": "2027-10-04", "end": "2028-01-14" },
-    { "id": "spring", "name": { "en": "Spring semester" }, "start": "2028-02-14", "end": "2028-05-26" }
+    { "id": "winter", "name": { "en": "Winter semester" }, "semester": 1, "start": "2027-10-04", "end": "2028-01-14" },
+    { "id": "spring", "name": { "en": "Spring semester" }, "semester": 2, "start": "2028-02-14", "end": "2028-05-26" }
   ]
 }

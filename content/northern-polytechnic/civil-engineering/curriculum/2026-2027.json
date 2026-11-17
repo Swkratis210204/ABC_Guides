@@ -1,5 +1,13 @@
 {
+  "degree": "undergraduate",
   "academic_year": "2026-2027",
+  "requirements": {
+    "total_ects": 300,
+    "min_semesters": 10,
+    "rules": [
+      { "id": "thesis", "title": { "el": "Διπλωματική εργασία", "en": "Diploma thesis" }, "description": { "el": "Ολοκλήρωση διπλωματικής εργασίας.", "en": "Complete a diploma thesis." } }
+    ]
+  },
   "levels": [
     { "id": "core", "short": "Π", "name": { "el": "Υποχρεωτικά", "en": "Core" } }
   ],

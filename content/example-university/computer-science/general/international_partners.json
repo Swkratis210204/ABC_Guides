@@ -1,0 +1,18 @@
+{
+  "partners": [
+    {
+      "id": "tu-munich",
+      "name": { "en": "Technical University of Munich", "el": "Τεχνικό Πανεπιστήμιο του Μονάχου" },
+      "country": "Germany",
+      "city": "Munich",
+      "type": "erasmus",
+      "erasmus_code": "D MUNCHEN02",
+      "study_levels": ["bachelor", "master", "phd"],
+      "website": "https://www.tum.example",
+      "notes": { "en": "Two places per year. German or English at level B2." }
+    },
+    { "id": "uni-lyon", "name": { "en": "University of Lyon" }, "country": "France", "type": "exchange", "study_levels": ["master"] },
+    { "id": "kth-stockholm", "name": { "en": "KTH Royal Institute of Technology" }, "country": "Sweden", "type": "double_degree" },
+    { "id": "summer-link", "name": { "en": "Example Summer Institute" }, "country": "Exampleland", "type": "other" }
+  ]
+}

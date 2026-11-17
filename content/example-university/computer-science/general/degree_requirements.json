@@ -1,8 +1,0 @@
-{
-  "total_ects": 240,
-  "min_semesters": 8,
-  "rules": [
-    { "id": "mandatory", "title": { "en": "Mandatory courses" }, "description": { "en": "Pass all mandatory courses." } },
-    { "id": "language", "title": { "en": "Language certificate" }, "description": { "en": "Provide an English certificate at level B2 or higher." } }
-  ]
-}

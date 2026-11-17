@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "properties": {
     "name": { "$ref": "urn:schema:common#/$defs/text" },
-    "school": { "description": "The id of the school this department belongs to (from schools.json)", "$ref": "urn:schema:common#/$defs/id" },
+    "school": { "description": "The id of the school this department belongs to (from schools.json). Optional.", "$ref": "urn:schema:common#/$defs/id" },
     "website": { "$ref": "urn:schema:common#/$defs/url" },
     "email": { "$ref": "urn:schema:common#/$defs/email" },
     "phone": { "type": "string" },
