@@ -19,7 +19,9 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
       - run: pip install -r requirements.txt
-      - name: Run all tests
-        run: python -m pytest tests -q
+      # The content check runs first on purpose: if a content file is wrong, the run stops here
+      # with only the plain-language message, instead of hundreds of lines of test output.
       - name: Check the content files
         run: python scripts/validate.py
+      - name: Run all tests
+        run: python -m pytest tests -q
