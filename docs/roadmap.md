@@ -8,7 +8,7 @@ Status: ✅ done, 🔄 in progress, ⬜ not started.
 |---|---|---|
 | 1 | Design the first JSON schema, checker and tests | ✅ |
 | 2 | Finish the schema and freeze version 1 | ✅ |
-| 3 | Refuse changes that don't match the schema | ⬜ |
+| 3 | Refuse changes that don't match the schema | ✅ |
 | 4 | Instructions for people editing JSON | ⬜ |
 | 5 | Put in real data | ⬜ |
 | 6 | Build the website (MkDocs) | ⬜ |
@@ -33,13 +33,14 @@ Every gap was reviewed one by one. The decisions are in [work/step-2-decisions.m
 
 Done when: sample data covers all of it and the tests pass. Both are true (66 tests).
 
-### 3. Refuse changes that don't match the schema
+### 3. Refuse changes that don't match the schema ✅
 Nothing goes live unless the check passes.
 - ✅ Decided how people submit changes: as a proposal (pull request) that is merged only when the check is green. Direct commits to main are not allowed. The editor clicks Commit, then Create pull request, then Merge once the check is green. Auto-merge may come later, after step 10.
-- Turn on the GitHub rule that blocks merging when the check fails.
-- The error message must say in plain words what to fix and where.
+- ✅ Turned on the GitHub rule (`.github/rulesets/protect-testing.json`, applied to `testing`): a pull request is required, the `tests` check must be green, no force-push or deletion. Everyone with access can merge a green proposal (0 approvals required).
+- ✅ The content check runs first in `checks.yml`, so a content mistake shows only the plain-language message, not test output.
+- Still to polish in step 4: the wording uses Python's "Expecting ',' delimiter", and the line number can point one line after the real mistake. Explain each message in the common-mistakes list.
 
-Done when: a deliberately wrong change is blocked on GitHub and the message is understandable.
+Done when: a deliberately wrong change is blocked on GitHub and the message is understandable. Both are true (tested with a broken `content/index.json` through the GitHub web editor).
 
 ### 4. Instructions for people editing JSON
 A short guide, no jargon, for someone who has never used Git.
