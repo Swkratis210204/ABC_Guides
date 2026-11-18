@@ -34,7 +34,7 @@ Every gap was reviewed one by one. The decisions are in [work/step-2-decisions.m
 Done when: sample data covers all of it and the tests pass. Both are true (66 tests).
 
 ### 3. Refuse changes that don't match the schema ✅
-Nothing goes live unless the check passes.
+Nothing goes live unless the check passes. The decisions and tests are in [work/step-3.md](work/step-3.md).
 - ✅ Decided how people submit changes: as a proposal (pull request) that is merged only when the check is green. Direct commits to main are not allowed. The editor clicks Commit, then Create pull request, then Merge once the check is green. Auto-merge may come later, after step 10.
 - ✅ Turned on the GitHub rule (`.github/rulesets/protect-testing.json`, applied to `testing`): a pull request is required, the `tests` check must be green, no force-push or deletion. Everyone with access can merge a green proposal (0 approvals required).
 - ✅ The content check runs first in `checks.yml`, so a content mistake shows only the plain-language message, not test output.
