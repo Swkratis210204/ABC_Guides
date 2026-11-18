@@ -35,7 +35,7 @@ Done when: sample data covers all of it and the tests pass. Both are true (66 te
 
 ### 3. Refuse changes that don't match the schema
 Nothing goes live unless the check passes.
-- Decide how people submit changes: straight to the main branch, or as a proposal that is merged only when the check is green. (Recommended: proposal with a required check. GitHub's web editor creates it with one click.)
+- ✅ Decided how people submit changes: as a proposal (pull request) that is merged only when the check is green. Direct commits to main are not allowed. The editor clicks Commit, then Create pull request, then Merge once the check is green. Auto-merge may come later, after step 10.
 - Turn on the GitHub rule that blocks merging when the check fails.
 - The error message must say in plain words what to fix and where.
 
@@ -80,5 +80,4 @@ Watch them make a change without help. Everything they stumble on goes back into
 
 ## Decisions still open
 - Docusaurus or MkDocs? (Recommended: MkDocs, one toolchain with the checker.)
-- Direct commits or proposals with a required check? (Step 3.)
 - Do degree requirements stay plain text or become rules a program can check? (Step 2.)
