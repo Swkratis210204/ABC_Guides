@@ -3,7 +3,7 @@
   "academic_year": "2022-2023",
   "requirements": {
     "total_ects": 210,
-    "min_semesters": 7,
+    "min_semesters": 7
     "rules": [
       { "id": "mandatory", "title": { "en": "Mandatory courses" }, "description": { "en": "Pass all mandatory courses (older rules)." } }
     ]
