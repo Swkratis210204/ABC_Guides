@@ -9,7 +9,7 @@ Status: ✅ done, 🔄 in progress, ⬜ not started.
 | 1 | Design the first JSON schema, checker and tests | ✅ |
 | 2 | Finish the schema and freeze version 1 | ✅ |
 | 3 | Refuse changes that don't match the schema | ✅ |
-| 4 | Instructions for people editing JSON | ⬜ |
+| 4 | Instructions for people editing JSON | ✅ |
 | 5 | Put in real data | ⬜ |
 | 6 | Build the website (MkDocs) | ⬜ |
 | 7 | Publish the website (GitHub Pages) | ⬜ |
@@ -42,14 +42,15 @@ Nothing goes live unless the check passes. The decisions and tests are in [work/
 
 Done when: a deliberately wrong change is blocked on GitHub and the message is understandable. Both are true (tested with a broken `content/index.json` through the GitHub web editor).
 
-### 4. Instructions for people editing JSON
-A short guide, no jargon, for someone who has never used Git.
-- How to edit a file in the browser and save the change.
-- How to check a change **before** saving, without a terminal. Ideas: the editor underlines mistakes using the schema, or the GitHub check runs on every change.
-- A list of common mistakes and what the messages mean.
-- Copy-and-fill templates for the most common edits (add a course, add a teacher, add a new year).
+### 4. Instructions for people editing JSON ✅
+A short guide in [instructions.md](instructions.md), with two modules. Details in [work/step-4.md](work/step-4.md).
+- ✅ Module 1, for people who only change data: edit a file in the browser, open a pull request, wait for the check, merge, fix a red check.
+- ✅ Module 2, for people who use Git: setup, the full branch, push, pull request, merge and clean-up flow, troubleshooting.
+- ✅ A short list of common mistakes. The check runs on every pull request, so no separate tool is needed to check before saving.
+- Moved on: the full list of checker messages, and the copy-and-fill templates (add a course, a teacher, a year). Do them with step 5, when real data shows which edits are common.
+- Moved on: "someone follows it without help" is tested in step 10.
 
-Done when: someone follows it without help.
+Done when: the two modules are written. True for the first draft. The test with a real person is step 10.
 
 ### 5. Put in real data
 Load one real department (AUEB Computer Science) in the new format. Whatever does not fit goes back to step 2. Include previous years if available.
